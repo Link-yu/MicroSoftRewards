@@ -11,8 +11,7 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 
 @Component
@@ -25,7 +24,7 @@ public class HandleTask {
     private final static String PASS_WORD = "zhujing520";
     private final static String USER_NAME = "kevinyulk@163.com";
     @PostConstruct
-    public String test() throws InterruptedException {
+    public String test() throws InterruptedException, IOException {
         // msedgedriver.exe 绝对地址
         String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
         // 设置指定键对值的系统属性
@@ -69,12 +68,12 @@ public class HandleTask {
      * @param driver
      * @throws InterruptedException
      */
-    private void search(WebDriver driver) throws InterruptedException, IOException {.
+    private void search(WebDriver driver) throws InterruptedException, IOException {
 
-        Resource res = resourceLoader.getResource("classpath:" + "/template/" + "Key.txt");
+        Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "Key.txt");
         File file = res.getFile();
-        InputStreamReader inputStreamReader =new InputStreamReader(new FileInputStream(file),"GBK");
-        BufferedReader bufferedReader=new BufferedReader(inputStreamReader);
+        InputStreamReader reader = new InputStreamReader(new FileInputStream(file));
+        BufferedReader bufferedReader = new BufferedReader(reader);
         String content=null;
         while ((content = bufferedReader.readLine()) != null) {
             Thread.sleep(3000);
