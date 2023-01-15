@@ -5,25 +5,25 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.system.ApplicationHome;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.io.*;
-import java.util.HashMap;
+import java.util.concurrent.ExecutorService;
 
 @Component
 public class HandleTask {
     @Autowired
     private ResourceLoader resourceLoader;
 
-//    private final static String PASS_WORD = "yupaopao990";
-//    private final static String USER_NAME = "hangzhouhuawei@hotmail.com";
-    private final static String PASS_WORD = "zhujing520";
-    private final static String USER_NAME = "kevinyulk@163.com";
+    @javax.annotation.Resource(name = "threadPoolInstance")
+    private ExecutorService executorService;
+
+    @Value("${driver.path}")
+    private String driverPath;
 
     @PostConstruct
     private void work() {
@@ -35,7 +35,15 @@ public class HandleTask {
             String content=null;
             while ((content = bufferedReader.readLine()) != null) {
                 String[] account = content.split(" ");
-                executeTask(account[0], account[1]);
+                executorService.execute(() -> {
+                    try {
+                        executeTask(account[0], account[1]);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                });
             }
         } catch (Exception exception) {
             System.out.println("work error " + exception.getMessage());
@@ -78,6 +86,7 @@ public class HandleTask {
         driver.findElement(idBtnBack).click();
 
         search(driver);
+        System.out.println("账号：" + userName + " 执行成功!");
         driver.close();
         return "success";
     }
@@ -101,7 +110,6 @@ public class HandleTask {
             driver.findElement(bingSearchInput).clear();
             // 在必应的搜索框搜索二次疑问
             driver.findElement(bingSearchInput).sendKeys(content);
-//            Thread.sleep(2000);
             driver.findElement(bingSearchInput).sendKeys(Keys.ENTER);
             // 给你五秒钟预览答案时间
             Thread.sleep(2000);
