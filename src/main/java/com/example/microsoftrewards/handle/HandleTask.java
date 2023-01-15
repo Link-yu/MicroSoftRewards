@@ -9,6 +9,7 @@ import org.springframework.boot.system.ApplicationHome;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.io.*;
@@ -23,10 +24,28 @@ public class HandleTask {
 //    private final static String USER_NAME = "hangzhouhuawei@hotmail.com";
     private final static String PASS_WORD = "zhujing520";
     private final static String USER_NAME = "kevinyulk@163.com";
+
     @PostConstruct
-    public String test() throws InterruptedException, IOException {
+    private void work() {
+        Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "account.txt");
+        try {
+            File file = res.getFile();
+            InputStreamReader reader = new InputStreamReader(new FileInputStream(file));
+            BufferedReader bufferedReader = new BufferedReader(reader);
+            String content=null;
+            while ((content = bufferedReader.readLine()) != null) {
+                String[] account = content.split(" ");
+                executeTask(account[0], account[1]);
+            }
+        } catch (Exception exception) {
+            System.out.println("work error " + exception.getMessage());
+        }
+
+    }
+
+    public String executeTask(String userName, String password) throws InterruptedException, IOException {
         // msedgedriver.exe 绝对地址
-        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         // 设置指定键对值的系统属性
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         // 打开谷歌浏览器
@@ -42,14 +61,14 @@ public class HandleTask {
 
         Thread.sleep(10000);
         By loginNameInput = By.name("loginfmt");
-        driver.findElement(loginNameInput).sendKeys(USER_NAME);
+        driver.findElement(loginNameInput).sendKeys(userName);
 
         By nextButton = By.id("idSIButton9");
         driver.findElement(nextButton).click();
 
         Thread.sleep(3000);
         By passwordInput = By.name("passwd");
-        driver.findElement(passwordInput).sendKeys(PASS_WORD);
+        driver.findElement(passwordInput).sendKeys(password);
 
         Thread.sleep(3000);
         driver.findElement(nextButton).click();
@@ -82,10 +101,10 @@ public class HandleTask {
             driver.findElement(bingSearchInput).clear();
             // 在必应的搜索框搜索二次疑问
             driver.findElement(bingSearchInput).sendKeys(content);
-            Thread.sleep(2000);
+//            Thread.sleep(2000);
             driver.findElement(bingSearchInput).sendKeys(Keys.ENTER);
             // 给你五秒钟预览答案时间
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         }
     }
 }
