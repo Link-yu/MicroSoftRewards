@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
@@ -52,17 +53,21 @@ public class HandleTask {
     }
 
     public String executeTask(String userName, String password) throws InterruptedException, IOException {
-        // msedgedriver.exe 绝对地址
-        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+        // msedgedriver.exe macOS
+//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+        // msedgedriver.exe windows
+        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
         // 设置指定键对值的系统属性
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
+        EdgeOptions edgeOptions = new EdgeOptions();
+        edgeOptions.addArguments("--incognito");
         // 打开谷歌浏览器
-        WebDriver driver = new EdgeDriver();
+        WebDriver driver = new EdgeDriver(edgeOptions);
         // 浏览器最大化
         driver.manage().window().maximize();
 
         // 答案不是很明确？跳转到必应去搜索下
-        driver.get("https://cn.bing.com/");
+        driver.get("https://bing.com/");
         Thread.sleep(5000);
         By loginInput = By.id("id_s");
         driver.findElement(loginInput).click();
@@ -114,5 +119,16 @@ public class HandleTask {
             // 给你五秒钟预览答案时间
             Thread.sleep(2000);
         }
+    }
+
+    private void saveSuccessAccount(String userName) throws IOException {
+        Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "success.txt");
+        File file = res.getFile();
+        OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file));
+        BufferedWriter bufferedWriter = new BufferedWriter(writer);
+        bufferedWriter.write(userName);
+        bufferedWriter.newLine();
+        bufferedWriter.flush();
+        bufferedWriter.close();
     }
 }
