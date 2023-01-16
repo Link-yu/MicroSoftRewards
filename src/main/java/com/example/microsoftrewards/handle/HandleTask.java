@@ -17,16 +17,18 @@ import java.util.concurrent.ExecutorService;
 
 @Component
 public class HandleTask {
+
+    private final static String PASS_WORD = "yupaopao990";
     @Autowired
     private ResourceLoader resourceLoader;
 
     @javax.annotation.Resource(name = "threadPoolInstance")
     private ExecutorService executorService;
 
-    @Value("${driver.path}")
-    private String driverPath;
-
     @PostConstruct
+    private void startJob() {
+        work();
+    }
     private void work() {
         Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "account.txt");
         try {
@@ -35,14 +37,18 @@ public class HandleTask {
             BufferedReader bufferedReader = new BufferedReader(reader);
             String content=null;
             while ((content = bufferedReader.readLine()) != null) {
-                String[] account = content.split(" ");
+                String userName = content;
                 executorService.execute(() -> {
                     try {
-                        executeTask(account[0], account[1]);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                        if(userName.equals("kevinyulk@163.com")) {
+                            executeTask(userName, "zhujing520");
+                        } else {
+                            executeTask(userName, PASS_WORD);
+                        }
+                        saveSuccessAccount(userName + " " + "success");
+                    } catch (InterruptedException | IOException e) {
+                        System.out.println("error "+ e.getMessage());
+                        saveSuccessAccount(userName + " " + "faild");
                     }
                 });
             }
@@ -61,7 +67,7 @@ public class HandleTask {
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.addArguments("--incognito");
-        // 打开谷歌浏览器
+        // 打开edge浏览器
         WebDriver driver = new EdgeDriver(edgeOptions);
         // 浏览器最大化
         driver.manage().window().maximize();
@@ -119,16 +125,30 @@ public class HandleTask {
             // 给你五秒钟预览答案时间
             Thread.sleep(2000);
         }
+        //
+        By rewardsId = By.id("id_rc");
+        String value = driver.findElement(rewardsId).getText();
+        System.out.println(value);
+
+        Thread.sleep(2000);
     }
 
-    private void saveSuccessAccount(String userName) throws IOException {
-        Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "success.txt");
-        File file = res.getFile();
-        OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file));
-        BufferedWriter bufferedWriter = new BufferedWriter(writer);
-        bufferedWriter.write(userName);
-        bufferedWriter.newLine();
-        bufferedWriter.flush();
-        bufferedWriter.close();
+    private void saveSuccessAccount(String userName) {
+        BufferedWriter bufferedWriter = null;
+        try {
+            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
+            OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(fileName, true));
+            bufferedWriter = new BufferedWriter(writer);
+            bufferedWriter.write(userName);
+            bufferedWriter.newLine();
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        } finally {
+            try {
+                bufferedWriter.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 }
