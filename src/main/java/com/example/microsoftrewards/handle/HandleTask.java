@@ -38,19 +38,11 @@ public class HandleTask {
             String content=null;
             while ((content = bufferedReader.readLine()) != null) {
                 String userName = content;
-                executorService.execute(() -> {
-                    try {
-                        if(userName.equals("kevinyulk@163.com")) {
-                            executeTask(userName, "zhujing520");
-                        } else {
-                            executeTask(userName, PASS_WORD);
-                        }
-                        saveSuccessAccount(userName + " " + "success");
-                    } catch (InterruptedException | IOException e) {
-                        System.out.println("error "+ e.getMessage());
-                        saveSuccessAccount(userName + " " + "faild");
-                    }
-                });
+                if(userName.equals("kevinyulk@163.com")) {
+                    executeTask(userName, "zhujing520");
+                } else {
+                    executeTask(userName, PASS_WORD);
+                }
             }
         } catch (Exception exception) {
             System.out.println("work error " + exception.getMessage());
@@ -58,11 +50,11 @@ public class HandleTask {
 
     }
 
-    public String executeTask(String userName, String password) throws InterruptedException, IOException {
+    public String executeTask(String userName, String password) {
         // msedgedriver.exe macOS
-//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         // msedgedriver.exe windows
-        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+//        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
         // 设置指定键对值的系统属性
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
@@ -72,33 +64,40 @@ public class HandleTask {
         // 浏览器最大化
         driver.manage().window().maximize();
 
-        // 答案不是很明确？跳转到必应去搜索下
-        driver.get("https://bing.com/");
-        Thread.sleep(5000);
-        By loginInput = By.id("id_s");
-        driver.findElement(loginInput).click();
+        try {
+            // 答案不是很明确？跳转到必应去搜索下
+            driver.get("https://cn.bing.com/");
+            Thread.sleep(5000);
+            By loginInput = By.id("id_s");
+            driver.findElement(loginInput).click();
 
-        Thread.sleep(10000);
-        By loginNameInput = By.name("loginfmt");
-        driver.findElement(loginNameInput).sendKeys(userName);
+            Thread.sleep(10000);
+            By loginNameInput = By.name("loginfmt");
+            driver.findElement(loginNameInput).sendKeys(userName);
 
-        By nextButton = By.id("idSIButton9");
-        driver.findElement(nextButton).click();
+            By nextButton = By.id("idSIButton9");
+            driver.findElement(nextButton).click();
 
-        Thread.sleep(3000);
-        By passwordInput = By.name("passwd");
-        driver.findElement(passwordInput).sendKeys(password);
+            Thread.sleep(3000);
+            By passwordInput = By.name("passwd");
+            driver.findElement(passwordInput).sendKeys(password);
 
-        Thread.sleep(3000);
-        driver.findElement(nextButton).click();
+            Thread.sleep(3000);
+            driver.findElement(nextButton).click();
 
-        Thread.sleep(3000);
-        By idBtnBack = By.id("idSIButton9");
-        driver.findElement(idBtnBack).click();
+            Thread.sleep(3000);
+            By idBtnBack = By.id("idSIButton9");
+            driver.findElement(idBtnBack).click();
 
-        search(driver);
-        System.out.println("账号：" + userName + " 执行成功!");
-        driver.close();
+            search(driver);
+            System.out.println("账号：" + userName + " 执行成功!");
+            saveSuccessAccount(userName + " " + "success");
+        } catch (Exception exception) {
+            System.out.println("账号：" + userName + " 执行失败!");
+            saveSuccessAccount(userName + " " + "faild");
+        } finally {
+            driver.close();
+        }
         return "success";
     }
 
@@ -114,6 +113,7 @@ public class HandleTask {
         InputStreamReader reader = new InputStreamReader(new FileInputStream(file));
         BufferedReader bufferedReader = new BufferedReader(reader);
         String content=null;
+        int count = 0;
         while ((content = bufferedReader.readLine()) != null) {
             Thread.sleep(3000);
             // 定位到必应的搜索框
@@ -124,6 +124,10 @@ public class HandleTask {
             driver.findElement(bingSearchInput).sendKeys(Keys.ENTER);
             // 给你五秒钟预览答案时间
             Thread.sleep(2000);
+            count++;
+            if (count == 30) {
+                break;
+            }
         }
         //
         By rewardsId = By.id("id_rc");
