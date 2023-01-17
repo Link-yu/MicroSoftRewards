@@ -15,6 +15,9 @@
 	<description>MicroSoftRewards</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<selenium.version>4.7.2</selenium.version>
+		<fastjson.version>1.2.60</fastjson.version>
+		<jsoup.version>1.12.1</jsoup.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -30,7 +33,17 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.7.2</version>
+			<version>${selenium.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>${jsoup.version}</version>
 		</dependency>
 	</dependencies>
 

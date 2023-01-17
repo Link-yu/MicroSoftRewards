@@ -6,14 +6,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.PostConstruct;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
+import java.util.List;
 
 @Component
 public class HandleTask {
@@ -25,8 +28,11 @@ public class HandleTask {
     @javax.annotation.Resource(name = "threadPoolInstance")
     private ExecutorService executorService;
 
+    private static List<String> hotNews = new ArrayList<>();
+
     @PostConstruct
     private void startJob() {
+        hotNews = SpiderUtil.grabBaiduHotNewsJson();
         work();
     }
     private void work() {
@@ -52,49 +58,47 @@ public class HandleTask {
 
     public String executeTask(String userName, String password) {
         // msedgedriver.exe macOS
-        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         // msedgedriver.exe windows
-//        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
         // 设置指定键对值的系统属性
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
-        edgeOptions.addArguments("--incognito");
+        edgeOptions.addArguments(Arrays.asList("--incognito"));
         // 打开edge浏览器
         WebDriver driver = new EdgeDriver(edgeOptions);
         // 浏览器最大化
-        driver.manage().window().maximize();
+        // driver.manage().window().maximize();
 
         try {
-            // 答案不是很明确？跳转到必应去搜索下
             driver.get("https://cn.bing.com/");
             Thread.sleep(5000);
             By loginInput = By.id("id_s");
             driver.findElement(loginInput).click();
 
-            Thread.sleep(10000);
+            Thread.sleep(5000);
             By loginNameInput = By.name("loginfmt");
             driver.findElement(loginNameInput).sendKeys(userName);
-
-            By nextButton = By.id("idSIButton9");
-            driver.findElement(nextButton).click();
+            driver.findElement(loginNameInput).sendKeys(Keys.ENTER);
 
             Thread.sleep(3000);
             By passwordInput = By.name("passwd");
             driver.findElement(passwordInput).sendKeys(password);
-
-            Thread.sleep(3000);
-            driver.findElement(nextButton).click();
+            driver.findElement(passwordInput).sendKeys(Keys.ENTER);
 
             Thread.sleep(3000);
             By idBtnBack = By.id("idSIButton9");
             driver.findElement(idBtnBack).click();
 
             search(driver);
+            Thread.sleep(3000);
+            By rewardsId = By.id("id_rc");
+            String value = driver.findElement(rewardsId).getText();
             System.out.println("账号：" + userName + " 执行成功!");
-            saveSuccessAccount(userName + " " + "success");
+            saveSuccessAccount("success" + "账号: " + userName + " 执行成功,共积累 " + value + " 分");
         } catch (Exception exception) {
             System.out.println("账号：" + userName + " 执行失败!");
-            saveSuccessAccount(userName + " " + "faild");
+            saveSuccessAccount("failed " + "账号: " + userName);
         } finally {
             driver.close();
         }
@@ -106,35 +110,22 @@ public class HandleTask {
      * @param driver
      * @throws InterruptedException
      */
-    private void search(WebDriver driver) throws InterruptedException, IOException {
+    private void search(WebDriver driver) throws InterruptedException {
 
-        Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "Key.txt");
-        File file = res.getFile();
-        InputStreamReader reader = new InputStreamReader(new FileInputStream(file));
-        BufferedReader bufferedReader = new BufferedReader(reader);
-        String content=null;
-        int count = 0;
-        while ((content = bufferedReader.readLine()) != null) {
-            Thread.sleep(3000);
+        if (CollectionUtils.isEmpty(hotNews)) {
+            hotNews = SpiderUtil.grabBaiduHotNewsJson();
+        }
+        for (int i = 0; i < hotNews.size(); i++) {
+            Thread.sleep(2000);
             // 定位到必应的搜索框
             By bingSearchInput = By.id("sb_form_q");
             driver.findElement(bingSearchInput).clear();
             // 在必应的搜索框搜索二次疑问
-            driver.findElement(bingSearchInput).sendKeys(content);
+            driver.findElement(bingSearchInput).sendKeys(hotNews.get(i));
             driver.findElement(bingSearchInput).sendKeys(Keys.ENTER);
-            // 给你五秒钟预览答案时间
-            Thread.sleep(2000);
-            count++;
-            if (count == 30) {
-                break;
-            }
+            // 给你1秒钟预览答案时间
+            Thread.sleep(1000);
         }
-        //
-        By rewardsId = By.id("id_rc");
-        String value = driver.findElement(rewardsId).getText();
-        System.out.println(value);
-
-        Thread.sleep(2000);
     }
 
     private void saveSuccessAccount(String userName) {
