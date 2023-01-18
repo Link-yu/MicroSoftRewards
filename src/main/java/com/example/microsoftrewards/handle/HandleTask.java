@@ -30,10 +30,18 @@ public class HandleTask {
 
     private static List<String> hotNews = new ArrayList<>();
 
+    private static List<String> scores = new ArrayList<>();
+
     @PostConstruct
     private void startJob() {
         hotNews = SpiderUtil.grabBaiduHotNewsJson();
         work();
+        int total = 0;
+        for (int i = 0;i < scores.size(); i++) {
+            total+=Integer.valueOf(scores.get(0));
+        }
+
+        System.out.println("总计积分: " + total);
     }
     private void work() {
         Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "account.txt");
@@ -91,11 +99,12 @@ public class HandleTask {
             driver.findElement(idBtnBack).click();
 
             search(driver);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
             By rewardsId = By.id("id_rc");
             String value = driver.findElement(rewardsId).getText();
             System.out.println("账号：" + userName + " 执行成功!");
             saveSuccessAccount("success" + "账号: " + userName + " 执行成功,共积累 " + value + " 分");
+            scores.add(value);
         } catch (Exception exception) {
             System.out.println("账号：" + userName + " 执行失败!");
             saveSuccessAccount("failed " + "账号: " + userName);
