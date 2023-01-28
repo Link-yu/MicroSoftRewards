@@ -1,6 +1,5 @@
 package com.example.microsoftrewards.handle;
 
-import com.baomidou.mybatisplus.extension.service.additional.query.impl.QueryChainWrapper;
 import com.example.microsoftrewards.entity.MicrosoftAccount;
 import com.example.microsoftrewards.service.IMicrosoftAccountService;
 import org.openqa.selenium.By;
@@ -20,6 +19,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class HandleTask {
@@ -76,8 +76,9 @@ public class HandleTask {
 
     private void work() {
         List<MicrosoftAccount> list = microsoftAccountService.list();
-        list.forEach(microsoftAccount -> {
-            executeTask(microsoftAccount);
+        list.stream().filter(microsoftAccount -> microsoftAccount.getStatus() == 0)
+                .collect(Collectors.toList()).forEach(microsoftAccount -> {
+                    executeTask(microsoftAccount);
         });
 
     }
@@ -116,18 +117,14 @@ public class HandleTask {
             By idBtnBack = By.id("idSIButton9");
             driver.findElement(idBtnBack).click();
 
-            Thread.sleep(3000);
+            Thread.sleep(2000);
             search(driver);
             By rewardsId = By.id("id_rc");
             String value = driver.findElement(rewardsId).getText();
             System.out.println("账号：" + microsoftAccount.getUsername() + " 执行成功!");
             saveSuccessAccount("success" + "账号: " + microsoftAccount.getUsername()  + " 执行成功,共积累 " + value + " 分");
-            if (microsoftAccount.getTotalScore() == null) {
-                microsoftAccount.setTotalScore(value);
-            } else {
-                microsoftAccount.setDayScore(String.valueOf(Integer.valueOf(value) - Integer.valueOf(microsoftAccount.getTotalScore())));
-                microsoftAccount.setTotalScore(value);
-            }
+            microsoftAccount.setLastScore(value);
+            microsoftAccount.setLatestScore(value);
             microsoftAccount.setStatus(1);
             microsoftAccountService.updateById(microsoftAccount);
             scores.add(value);
@@ -151,9 +148,8 @@ public class HandleTask {
         List<String> hotNews = new ArrayList<>();
         String url = hotNewsUrls.get(random.nextInt(hotNewsUrls.size()));
         hotNews.addAll(SpiderUtil.grabBaiduHotNewsJson(PREFIX_URL + url));
-
-        for (int i = 0; i < 3; i++) {
-            Thread.sleep(2000);
+        Thread.sleep(5000);
+        for (int i = 0; i < 1; i++) {
             // 定位到必应的搜索框
             By bingSearchInput = By.id("sb_form_q");
             driver.findElement(bingSearchInput).clear();
@@ -161,7 +157,7 @@ public class HandleTask {
             driver.findElement(bingSearchInput).sendKeys(hotNews.get(i));
             driver.findElement(bingSearchInput).sendKeys(Keys.ENTER);
             // 给你1秒钟预览答案时间
-            Thread.sleep(3000);
+            Thread.sleep(   2000);
         }
     }
 
