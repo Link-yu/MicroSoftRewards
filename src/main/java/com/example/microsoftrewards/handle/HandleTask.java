@@ -1,5 +1,8 @@
 package com.example.microsoftrewards.handle;
 
+import com.baomidou.mybatisplus.extension.service.additional.query.impl.QueryChainWrapper;
+import com.example.microsoftrewards.entity.MicrosoftAccount;
+import com.example.microsoftrewards.service.IMicrosoftAccountService;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -9,32 +12,34 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
-import org.springframework.util.CollectionUtils;
 
 import javax.annotation.PostConstruct;
 import java.io.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.concurrent.ExecutorService;
+import java.util.Random;
 import java.util.List;
 
 @Component
 public class HandleTask {
 
-    private final static String PASS_WORD = "yupaopao990";
+    private final static String PREFIX_URL = "https://top.baidu.com/board?tab=";
+
+    private final static Random random = new Random();
     @Autowired
     private ResourceLoader resourceLoader;
 
-    @javax.annotation.Resource(name = "threadPoolInstance")
-    private ExecutorService executorService;
+    @Autowired
+    private IMicrosoftAccountService microsoftAccountService;
 
-    private static List<String> hotNews = new ArrayList<>();
+    private static List<String> hotNewsUrls = new ArrayList<>();
 
     private static List<String> scores = new ArrayList<>();
 
     @PostConstruct
     private void startJob() {
-        hotNews = SpiderUtil.grabBaiduHotNewsJson();
+        hotNewsUrls.addAll(Arrays.asList("realtime", "car", "movie", "novel", "teleplay", "game"));
         work();
         int total = 0;
         for (int i = 0;i < scores.size(); i++) {
@@ -43,7 +48,8 @@ public class HandleTask {
 
         System.out.println("总计积分: " + total);
     }
-    private void work() {
+
+    private void addAccount() {
         Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "account.txt");
         try {
             File file = res.getFile();
@@ -52,23 +58,35 @@ public class HandleTask {
             String content=null;
             while ((content = bufferedReader.readLine()) != null) {
                 String userName = content;
+                MicrosoftAccount microsoftAccount = new MicrosoftAccount();
+                microsoftAccount.setUsername(userName);
+                microsoftAccount.setCreateTime(LocalDateTime.now());
+                microsoftAccount.setUpdateTime(LocalDateTime.now());
                 if(userName.equals("kevinyulk@163.com")) {
-                    executeTask(userName, "zhujing520");
+                    microsoftAccount.setPassword("zhujing520");
                 } else {
-                    executeTask(userName, PASS_WORD);
+                    microsoftAccount.setPassword("yupaopao990");
                 }
+                microsoftAccountService.save(microsoftAccount);
             }
         } catch (Exception exception) {
             System.out.println("work error " + exception.getMessage());
         }
+    }
+
+    private void work() {
+        List<MicrosoftAccount> list = microsoftAccountService.list();
+        list.forEach(microsoftAccount -> {
+            executeTask(microsoftAccount);
+        });
 
     }
 
-    public String executeTask(String userName, String password) {
+    public String executeTask(MicrosoftAccount microsoftAccount) {
         // msedgedriver.exe macOS
-//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         // msedgedriver.exe windows
-        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+//        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
         // 设置指定键对值的系统属性
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
@@ -86,28 +104,38 @@ public class HandleTask {
 
             Thread.sleep(5000);
             By loginNameInput = By.name("loginfmt");
-            driver.findElement(loginNameInput).sendKeys(userName);
+            driver.findElement(loginNameInput).sendKeys(microsoftAccount.getUsername());
             driver.findElement(loginNameInput).sendKeys(Keys.ENTER);
 
             Thread.sleep(3000);
             By passwordInput = By.name("passwd");
-            driver.findElement(passwordInput).sendKeys(password);
+            driver.findElement(passwordInput).sendKeys(microsoftAccount.getPassword());
             driver.findElement(passwordInput).sendKeys(Keys.ENTER);
 
             Thread.sleep(3000);
             By idBtnBack = By.id("idSIButton9");
             driver.findElement(idBtnBack).click();
 
+            Thread.sleep(3000);
             search(driver);
-            Thread.sleep(2000);
             By rewardsId = By.id("id_rc");
             String value = driver.findElement(rewardsId).getText();
-            System.out.println("账号：" + userName + " 执行成功!");
-            saveSuccessAccount("success" + "账号: " + userName + " 执行成功,共积累 " + value + " 分");
+            System.out.println("账号：" + microsoftAccount.getUsername() + " 执行成功!");
+            saveSuccessAccount("success" + "账号: " + microsoftAccount.getUsername()  + " 执行成功,共积累 " + value + " 分");
+            if (microsoftAccount.getTotalScore() == null) {
+                microsoftAccount.setTotalScore(value);
+            } else {
+                microsoftAccount.setDayScore(String.valueOf(Integer.valueOf(value) - Integer.valueOf(microsoftAccount.getTotalScore())));
+                microsoftAccount.setTotalScore(value);
+            }
+            microsoftAccount.setStatus(1);
+            microsoftAccountService.updateById(microsoftAccount);
             scores.add(value);
         } catch (Exception exception) {
-            System.out.println("账号：" + userName + " 执行失败!");
-            saveSuccessAccount("failed " + "账号: " + userName);
+            System.out.println("账号：" + microsoftAccount.getUsername()  + " 执行失败!" + "原因是" + exception.getMessage());
+            microsoftAccount.setStatus(0);
+            microsoftAccountService.updateById(microsoftAccount);
+            saveSuccessAccount("failed " + "账号: " + microsoftAccount.getUsername() );
         } finally {
             driver.close();
         }
@@ -120,11 +148,11 @@ public class HandleTask {
      * @throws InterruptedException
      */
     private void search(WebDriver driver) throws InterruptedException {
+        List<String> hotNews = new ArrayList<>();
+        String url = hotNewsUrls.get(random.nextInt(hotNewsUrls.size()));
+        hotNews.addAll(SpiderUtil.grabBaiduHotNewsJson(PREFIX_URL + url));
 
-        if (CollectionUtils.isEmpty(hotNews)) {
-            hotNews = SpiderUtil.grabBaiduHotNewsJson();
-        }
-        for (int i = 0; i < hotNews.size(); i++) {
+        for (int i = 0; i < 3; i++) {
             Thread.sleep(2000);
             // 定位到必应的搜索框
             By bingSearchInput = By.id("sb_form_q");
@@ -133,14 +161,15 @@ public class HandleTask {
             driver.findElement(bingSearchInput).sendKeys(hotNews.get(i));
             driver.findElement(bingSearchInput).sendKeys(Keys.ENTER);
             // 给你1秒钟预览答案时间
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         }
     }
 
     private void saveSuccessAccount(String userName) {
         BufferedWriter bufferedWriter = null;
         try {
-            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
+            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
+//            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
             OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(fileName, true));
             bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(userName);

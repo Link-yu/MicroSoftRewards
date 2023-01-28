@@ -29,7 +29,288 @@ success账号: yangguangcheng11@outlook.com 执行成功,共积累 321 分
 success账号: fuyangdongqiao@outlook.com 执行成功,共积累 177 分
 success账号: jingdongwuxianbao@outlook.com 执行成功,共积累 189 分
 success账号: yulingkai2029@outlook.com 执行成功,共积累 63 分
+
+1月19
+
+failed 账号: yangguangcheng11@outlook.com, 原因是 Error communicating with the remote browser. It may have died.
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [96417e28586b27c713765c2ede485b0f, findElement {using=name, value=loginfmt}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.52, ms:edgeOptions: {debuggerAddress: localhost:53351}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53351/devtoo..., se:cdpVersion: 109.0.1518.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96417e28586b27c713765c2ede485b0f
+success账号: yangguangcheng11@outlook.com 执行成功,共积累 387 分
+success账号: fuyangnongshang1@outlook.com 执行成功,共积累 373 分
+success账号: fuyangdongqiao@outlook.com 执行成功,共积累 243 分
+success账号: jingdongwuxianbao@outlook.com 执行成功,共积累 255 分
+success账号: hangzhouhaikang@outlook.com 执行成功,共积累 231 分
+success账号: yulingkai110@outlook.com 执行成功,共积累 198 分
+failed 账号: yulingkai111@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.52)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [33438783b7cf18fba4098b4a7e1e37af, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.52, ms:edgeOptions: {debuggerAddress: localhost:54216}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54216/devtoo..., se:cdpVersion: 109.0.1518.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33438783b7cf18fba4098b4a7e1e37af
+success账号: yulingkai120@outlook.com 执行成功,共积累 201 分
+success账号: yulingkai122@hotmail.com 执行成功,共积累 195 分
+success账号: yulingkai123@hotmail.com 执行成功,共积累 198 分
+success账号: zhujing119@outlook.com 执行成功,共积累 201 分
+success账号: yuyouming110@outlook.com 执行成功,共积累 201 分
+success账号: yulingkai220@outlook.com 执行成功,共积累 168 分
+success账号: yulingkai221@outlook.com 执行成功,共积累 165 分
+success账号: yulingkai2021@outlook.com 执行成功,共积累 162 分
+failed 账号: yulingkai2022@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [77ff72bbd30c06c557f9413927fec4fc, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:55059}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55059/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77ff72bbd30c06c557f9413927fec4fc
+failed 账号: yulingkai2023@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [30e9098ce218e80f1cb5f5fb1c66ca32, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:55098}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55098/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30e9098ce218e80f1cb5f5fb1c66ca32
+success账号: yulingkai2024@outlook.com 执行成功,共积累 171 分
+failed 账号: yulingkai2025@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c5c0a90e6dc59645f94ad4caa141b632, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:55245}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55245/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c5c0a90e6dc59645f94ad4caa141b632
+failed 账号: yulingkai2026@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"*[name='loginfmt']"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8c8966b2620a070478a20ffdb055edb2, findElement {using=name, value=loginfmt}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:55301}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55301/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c8966b2620a070478a20ffdb055edb2
+success账号: yulingkai2027@outlook.com 执行成功,共积累 129 分
+success账号: yulingkai2028@outlook.com 执行成功,共积累 129 分
+success账号: yulingkai2029@outlook.com 执行成功,共积累 129 分
+failed 账号: yulingkai2030@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2c80c6bc6dc7d85edea55074a3e22063, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:55618}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55618/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c80c6bc6dc7d85edea55074a3e22063
+success账号: yulingkai2031@outlook.com 执行成功,共积累 150 分
+success账号: yulingkai2032@outlook.com 执行成功,共积累 153 分
+success账号: yulingkai2033@outlook.com 执行成功,共积累 120 分
+success账号: yulingkai2034@outlook.com 执行成功,共积累 108 分
+success账号: yulingkai2035@outlook.com 执行成功,共积累 132 分
+success账号: yulingkai2036@outlook.com 执行成功,共积累 132 分
+failed 账号: yulingkai2037@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#id_s"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [839a59e845ecf2925c2d1e843f7124f4, findElement {using=id, value=id_s}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:56276}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56276/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 839a59e845ecf2925c2d1e843f7124f4
+success账号: yulingkai2038@outlook.com 执行成功,共积累 162 分
+success账号: yulingkai2039@outlook.com 执行成功,共积累 117 分
+success账号: yulingkai2040@outlook.com 执行成功,共积累 103 分
+success账号: yulingkai2041@outlook.com 执行成功,共积累 99 分
+success账号: yulingkai2042@outlook.com 执行成功,共积累 96 分
+success账号: yulingkai2043@outlook.com 执行成功,共积累 117 分
+success账号: yulingkai2044@outlook.com 执行成功,共积累 126 分
+
+success账号: kevinyulk@163.com 执行成功,共积累 3719 分
+success账号: hangzhouhuawei@hotmail.com 执行成功,共积累 1020 分
+success账号: hangzhouhuawei1@outlook.com 执行成功,共积累 677 分
+success账号: hangzhouhuawei2@outlook.com 执行成功,共积累 467 分
+success账号: hangzhouhuawei3@outlook.com 执行成功,共积累 389 分
+success账号: shaoyifu1@outlook.com 执行成功,共积累 418 分
+success账号: shaoyifu2@outlook.com 执行成功,共积累 417 分
+success账号: shaoyifu3@outlook.com 执行成功,共积累 418 分
+failed 账号: yulingkai111@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [5a55dcdc862ee3614b621c0aec63670e, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:58439}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58439/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a55dcdc862ee3614b621c0aec63670e
+failed 账号: yulingkai2022@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d153838d5647c04398f138b523d3c2df, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:58482}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58482/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d153838d5647c04398f138b523d3c2df
+failed 账号: yulingkai2023@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [170abd7e905285c08ed65f553ef7c83e, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:58528}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58528/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 170abd7e905285c08ed65f553ef7c83e
+failed 账号: yulingkai2025@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1113da830cf4c9778dc520ebe70546c7, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:58571}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58571/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1113da830cf4c9778dc520ebe70546c7
+success账号: yulingkai2026@outlook.com 执行成功,共积累 129 分
+failed 账号: yulingkai2030@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [125ec104164299824765175eff692620, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:58721}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58721/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 125ec104164299824765175eff692620
+success账号: yulingkai2037@outlook.com 执行成功,共积累 296 分
+failed 账号: yulingkai111@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [75fb56ff7b27036e2fb438c3d8c6d71c, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:62598}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62598/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75fb56ff7b27036e2fb438c3d8c6d71c
+failed 账号: yulingkai2022@outlook.com, 原因是 java.util.concurrent.TimeoutException
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1d271b3ff30ec745d2199440360ccbc1, sendKeysToElement {id=d2862827-1b8c-4896-9b39-4d9570f26bbe, value=[Ljava.lang.CharSequence;@7e64c1a9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:62655}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62655/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on MAC (1d271b3ff30ec745d2199440360ccbc1)] -> name: passwd]
+Session ID: 1d271b3ff30ec745d2199440360ccbc1
+failed 账号: yulingkai111@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b6d4cea47cc389a673ec77dcde96956a, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:49987}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49987/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b6d4cea47cc389a673ec77dcde96956a
+failed 账号: yulingkai2022@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c8671abead09d23d05f4c33f708ddb61, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:50141}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50141/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c8671abead09d23d05f4c33f708ddb61
+failed 账号: yulingkai2025@outlook.com, 原因是 The driver server has unexpectedly died!
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [a213fac293867062dd0a398b3807d12f, findElement {using=id, value=id_s}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:50243}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50243/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a213fac293867062dd0a398b3807d12f
+success账号: kevinyulk@163.com 执行成功,共积累 3839 分
+success账号: hangzhouhuawei@hotmail.com 执行成功,共积累 1128 分
+failed 账号: hangzhouhuawei1@outlook.com, 原因是 no such element: Unable to locate element: {"method":"css selector","selector":"#idSIButton9"}
+  (Session info: MicrosoftEdge=109.0.1518.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [5fc0fefb4b1d6f87aecd81e5e1320625, findElement {using=id, value=idSIButton9}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:51120}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51120/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fc0fefb4b1d6f87aecd81e5e1320625
+failed 账号: hangzhouhuawei2@outlook.com, 原因是 The driver server has unexpectedly died!
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [96bbd0d5a0447b2d73d559aad791eb8f, findElement {using=id, value=sb_form_q}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:51195}, msedge: {msedgedriverVersion: 109.0.1518.49 (a0ba3a09d1b7..., userDataDir: /var/folders/78/s83zr5pd73d...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51195/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96bbd0d5a0447b2d73d559aad791eb8f
+success账号: kevinyulk@163.com 执行成功,共积累 3914 分
+success账号: kevinyulk@163.com 执行成功,共积累 3923 分
+failed 账号: kevinyulk@163.com
+failed 账号: hangzhouhuawei@hotmail.com
+failed 账号: hangzhouhuawei1@outlook.com
+success账号: kevinyulk@163.com 执行成功,共积累 3926 分
+failed 账号: hangzhouhuawei@hotmail.com
+failed 账号: hangzhouhuawei1@outlook.com
+success账号: kevinyulk@163.com 执行成功,共积累 3926 分
+failed 账号: hangzhouhuawei@hotmail.com
+success账号: hangzhouhuawei1@outlook.com 执行成功,共积累 707 分
+failed 账号: hangzhouhuawei2@outlook.com
+failed 账号: hangzhouhuawei3@outlook.com
+failed 账号: kevinyulk@163.com
+success账号: hangzhouhuawei@hotmail.com 执行成功,共积累 1209 分
+failed 账号: hangzhouhuawei1@outlook.com
+success账号: kevinyulk@163.com 执行成功,共积累 4013 分
+success账号: hangzhouhuawei@hotmail.com 执行成功,共积累 1233 分
+success账号: hangzhouhuawei1@outlook.com 执行成功,共积累 797 分
+failed 账号: hangzhouhuawei2@outlook.com
+failed 账号: hangzhouhuawei3@outlook.com
+success账号: shaoyifu1@outlook.com 执行成功,共积累 451 分
+failed 账号: shaoyifu2@outlook.com
+failed 账号: shaoyifu3@outlook.com13
+failed 账号: yangguangcheng11@outlook.com
+success账号: fuyangnongshang1@outlook.com 执行成功,共积累 409 分
+failed 账号: fuyangdongqiao@outlook.com
+failed 账号: jingdongwuxianbao@outlook.com
+failed 账号: hangzhouhaikang@outlook.com
+failed 账号: yulingkai110@outlook.com
+failed 账号: yulingkai111@outlook.com
+success账号: yulingkai120@outlook.com 执行成功,共积累 234 分
+failed 账号: yulingkai122@hotmail.com
+failed 账号: yulingkai123@hotmail.com
+failed 账号: zhujing119@outlook.com
+failed 账号: yuyouming110@outlook.com
+success账号: yulingkai220@outlook.com 执行成功,共积累 201 分
+failed 账号: yulingkai221@outlook.com
+failed 账号: yulingkai2021@outlook.com
+failed 账号: yulingkai2022@outlook.com
+failed 账号: yulingkai2023@outlook.com
+success账号: yulingkai2024@outlook.com 执行成功,共积累 204 分
+failed 账号: yulingkai2025@outlook.com
+failed 账号: yulingkai2026@outlook.com
+failed 账号: yulingkai2027@outlook.com
+failed 账号: yulingkai2028@outlook.com
+failed 账号: yulingkai2029@outlook.com
+failed 账号: yulingkai2030@outlook.com
 failed 账号: yulingkai2031@outlook.com
-failed 账号: yulingkai2031@outlook.com
-failed 账号: yulingkai2031@outlook.com
-failed 账号: yulingkai2031@outlook.com
+failed 账号: yulingkai2032@outlook.com
+failed 账号: yulingkai2033@outlook.com
+failed 账号: yulingkai2034@outlook.com
+failed 账号: yulingkai2035@outlook.com
+success账号: yulingkai2036@outlook.com 执行成功,共积累 165 分
+failed 账号: yulingkai2037@outlook.com
+failed 账号: yulingkai2038@outlook.com
+failed 账号: yulingkai2039@outlook.com
+failed 账号: yulingkai2040@outlook.com
+failed 账号: yulingkai2041@outlook.com
+failed 账号: yulingkai2042@outlook.com
+failed 账号: yulingkai2043@outlook.com
+failed 账号: yulingkai2044@outlook.com
+failed 账号: yulingkai2045@outlook.com
+failed 账号: yulingkai2046@outlook.com
+success账号: yulingkai2047@outlook.com 执行成功,共积累 87 分

@@ -14,16 +14,15 @@ import java.util.List;
  */
 public class SpiderUtil {
 
-    private static final String HOT_NEWS_URL = "https://top.baidu.com/board?tab=realtime&sa=fyb_realtime_31065";
     /**
      * 抓取百度热点排行榜
      * @return
      */
-    public static List<String> grabBaiduHotNewsJson(){
+    public static List<String> grabBaiduHotNewsJson(String url){
         List<String> list = new ArrayList<>();
         try {
             System.out.println("start grab baidu hot news");
-            Document doc = Jsoup.connect(HOT_NEWS_URL).get();
+            Document doc = Jsoup.connect(url).get();
             //标题
             Elements titles = doc.select(".c-single-text-ellipsis");
             //热搜指数
