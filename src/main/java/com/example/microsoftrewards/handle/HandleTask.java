@@ -79,15 +79,20 @@ public class HandleTask {
         list.stream().filter(microsoftAccount -> microsoftAccount.getStatus() == 0)
                 .collect(Collectors.toList()).forEach(microsoftAccount -> {
                     executeTask(microsoftAccount);
-        });
+                    try {
+                        Thread.sleep(60000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                });
 
     }
 
     public String executeTask(MicrosoftAccount microsoftAccount) {
         // msedgedriver.exe macOS
-        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         // msedgedriver.exe windows
-//        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
         // 设置指定键对值的系统属性
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
@@ -164,8 +169,8 @@ public class HandleTask {
     private void saveSuccessAccount(String userName) {
         BufferedWriter bufferedWriter = null;
         try {
-            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
-//            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
+//            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
+            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
             OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(fileName, true));
             bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(userName);
