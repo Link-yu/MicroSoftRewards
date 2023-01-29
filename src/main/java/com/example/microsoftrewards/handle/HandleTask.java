@@ -80,7 +80,7 @@ public class HandleTask {
                 .collect(Collectors.toList()).forEach(microsoftAccount -> {
                     executeTask(microsoftAccount);
                     try {
-                        Thread.sleep(60000);
+                        Thread.sleep(5000);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -90,9 +90,9 @@ public class HandleTask {
 
     public String executeTask(MicrosoftAccount microsoftAccount) {
         // msedgedriver.exe macOS
-//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         // msedgedriver.exe windows
-        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+//        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
         // 设置指定键对值的系统属性
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
@@ -113,17 +113,17 @@ public class HandleTask {
             driver.findElement(loginNameInput).sendKeys(microsoftAccount.getUsername());
             driver.findElement(loginNameInput).sendKeys(Keys.ENTER);
 
-            Thread.sleep(3000);
+            Thread.sleep(5000);
             By passwordInput = By.name("passwd");
             driver.findElement(passwordInput).sendKeys(microsoftAccount.getPassword());
             driver.findElement(passwordInput).sendKeys(Keys.ENTER);
 
-            Thread.sleep(3000);
-            By idBtnBack = By.id("idSIButton9");
+            Thread.sleep(5000);
+            By idBtnBack = By.id("idBtn_Back");
             driver.findElement(idBtnBack).click();
 
-            Thread.sleep(2000);
-            search(driver);
+            Thread.sleep(5000);
+            search(driver, Integer.valueOf(microsoftAccount.getLastScore()));
             By rewardsId = By.id("id_rc");
             String value = driver.findElement(rewardsId).getText();
             System.out.println("账号：" + microsoftAccount.getUsername() + " 执行成功!");
@@ -149,12 +149,18 @@ public class HandleTask {
      * @param driver
      * @throws InterruptedException
      */
-    private void search(WebDriver driver) throws InterruptedException {
+    private void search(WebDriver driver, Integer score) throws InterruptedException {
         List<String> hotNews = new ArrayList<>();
         String url = hotNewsUrls.get(random.nextInt(hotNewsUrls.size()));
         hotNews.addAll(SpiderUtil.grabBaiduHotNewsJson(PREFIX_URL + url));
+        int size = 15;
+        if (score > 500) {
+            url = hotNewsUrls.get(random.nextInt(hotNewsUrls.size()));
+            hotNews.addAll(SpiderUtil.grabBaiduHotNewsJson(PREFIX_URL + url));
+            size = 40;
+        }
         Thread.sleep(5000);
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < size; i++) {
             // 定位到必应的搜索框
             By bingSearchInput = By.id("sb_form_q");
             driver.findElement(bingSearchInput).clear();
@@ -162,15 +168,15 @@ public class HandleTask {
             driver.findElement(bingSearchInput).sendKeys(hotNews.get(i));
             driver.findElement(bingSearchInput).sendKeys(Keys.ENTER);
             // 给你1秒钟预览答案时间
-            Thread.sleep(   2000);
+            Thread.sleep(   1000);
         }
     }
 
     private void saveSuccessAccount(String userName) {
         BufferedWriter bufferedWriter = null;
         try {
-//            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
-            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
+            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
+//            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
             OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(fileName, true));
             bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(userName);
