@@ -13,6 +13,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.io.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -37,6 +38,10 @@ public class HandleTask {
 
     private static List<String> scores = new ArrayList<>();
 
+    @PostConstruct
+    public void test() {
+        startJob();
+    }
     public void startJob() {
         hotNewsUrls.addAll(Arrays.asList("realtime", "car", "movie", "novel", "teleplay", "game"));
         refreshPoint();
