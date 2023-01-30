@@ -1,4 +1,4 @@
-package com.example.microsoftrewards.handle;
+package com.example.microsoftrewards.util;
 
 import com.alibaba.fastjson.JSONArray;
 import org.jsoup.Jsoup;

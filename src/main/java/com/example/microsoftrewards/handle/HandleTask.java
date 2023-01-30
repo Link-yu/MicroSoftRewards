@@ -2,6 +2,7 @@ package com.example.microsoftrewards.handle;
 
 import com.example.microsoftrewards.entity.MicrosoftAccount;
 import com.example.microsoftrewards.service.IMicrosoftAccountService;
+import com.example.microsoftrewards.util.SpiderUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +13,6 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.io.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -37,44 +37,22 @@ public class HandleTask {
 
     private static List<String> scores = new ArrayList<>();
 
-    @PostConstruct
-    private void startJob() {
+    public void startJob() {
         hotNewsUrls.addAll(Arrays.asList("realtime", "car", "movie", "novel", "teleplay", "game"));
-        work();
+        refreshPoint();
+        printPoint();
+    }
+
+    private void printPoint() {
         int total = 0;
         for (int i = 0;i < scores.size(); i++) {
-            total+=Integer.valueOf(scores.get(0));
+            total+=Integer.valueOf(scores.get(i));
         }
 
         System.out.println("总计积分: " + total);
     }
 
-    private void addAccount() {
-        Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "account.txt");
-        try {
-            File file = res.getFile();
-            InputStreamReader reader = new InputStreamReader(new FileInputStream(file));
-            BufferedReader bufferedReader = new BufferedReader(reader);
-            String content=null;
-            while ((content = bufferedReader.readLine()) != null) {
-                String userName = content;
-                MicrosoftAccount microsoftAccount = new MicrosoftAccount();
-                microsoftAccount.setUsername(userName);
-                microsoftAccount.setCreateTime(LocalDateTime.now());
-                microsoftAccount.setUpdateTime(LocalDateTime.now());
-                if(userName.equals("kevinyulk@163.com")) {
-                    microsoftAccount.setPassword("zhujing520");
-                } else {
-                    microsoftAccount.setPassword("yupaopao990");
-                }
-                microsoftAccountService.save(microsoftAccount);
-            }
-        } catch (Exception exception) {
-            System.out.println("work error " + exception.getMessage());
-        }
-    }
-
-    private void work() {
+    private void refreshPoint() {
         List<MicrosoftAccount> list = microsoftAccountService.list();
         list.stream().filter(microsoftAccount -> microsoftAccount.getStatus() == 0)
                 .collect(Collectors.toList()).forEach(microsoftAccount -> {
@@ -85,22 +63,19 @@ public class HandleTask {
                         throw new RuntimeException(e);
                     }
                 });
-
     }
 
     public String executeTask(MicrosoftAccount microsoftAccount) {
         // msedgedriver.exe macOS
-        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         // msedgedriver.exe windows
-//        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
         // 设置指定键对值的系统属性
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.addArguments(Arrays.asList("--incognito"));
         // 打开edge浏览器
         WebDriver driver = new EdgeDriver(edgeOptions);
-        // 浏览器最大化
-        // driver.manage().window().maximize();
 
         try {
             driver.get("https://cn.bing.com/");
@@ -128,7 +103,7 @@ public class HandleTask {
             String value = driver.findElement(rewardsId).getText();
             System.out.println("账号：" + microsoftAccount.getUsername() + " 执行成功!");
             saveSuccessAccount("success" + "账号: " + microsoftAccount.getUsername()  + " 执行成功,共积累 " + value + " 分");
-            microsoftAccount.setLastScore(value);
+            microsoftAccount.setLastScore(microsoftAccount.getLatestScore());
             microsoftAccount.setLatestScore(value);
             microsoftAccount.setStatus(1);
             microsoftAccountService.updateById(microsoftAccount);
@@ -175,8 +150,8 @@ public class HandleTask {
     private void saveSuccessAccount(String userName) {
         BufferedWriter bufferedWriter = null;
         try {
-            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
-//            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
+//            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
+            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
             OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(fileName, true));
             bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(userName);
@@ -189,6 +164,31 @@ public class HandleTask {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+        }
+    }
+
+    private void addAccount() {
+        Resource res = resourceLoader.getResource("classpath:" + "/templates/" + "account.txt");
+        try {
+            File file = res.getFile();
+            InputStreamReader reader = new InputStreamReader(new FileInputStream(file));
+            BufferedReader bufferedReader = new BufferedReader(reader);
+            String content=null;
+            while ((content = bufferedReader.readLine()) != null) {
+                String userName = content;
+                MicrosoftAccount microsoftAccount = new MicrosoftAccount();
+                microsoftAccount.setUsername(userName);
+                microsoftAccount.setCreateTime(LocalDateTime.now());
+                microsoftAccount.setUpdateTime(LocalDateTime.now());
+                if(userName.equals("kevinyulk@163.com")) {
+                    microsoftAccount.setPassword("zhujing520");
+                } else {
+                    microsoftAccount.setPassword("yupaopao990");
+                }
+                microsoftAccountService.save(microsoftAccount);
+            }
+        } catch (Exception exception) {
+            System.out.println("work error " + exception.getMessage());
         }
     }
 }
