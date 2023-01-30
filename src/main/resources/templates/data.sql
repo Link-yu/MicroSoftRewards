@@ -10,17 +10,6 @@ CREATE TABLE `microsoft_account` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-CREATE TABLE `microsoft_account_rewards` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
-  `account_id` int unsigned NOT NULL COMMENT '账户id',
-  `total_score` int NOT NULL COMMENT '累计积分',
-  `status` int NOT NULL COMMENT '更新状态',
-  `day_score` int NOT NULL COMMENT '每日新增积分',
-  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
-  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (1, 'kevinyulk@163.com', 'zhujing520', '2023-01-22 22:55:46', '2023-01-22 22:55:46', 4127, 4127, 1);
 INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (2, 'hangzhouhuawei@hotmail.com', 'yupaopao990', '2023-01-22 22:55:46', '2023-01-22 22:55:46', 1335, 1335, 1);
 INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (3, 'hangzhouhuawei1@outlook.com', 'yupaopao990', '2023-01-22 22:55:46', '2023-01-22 22:55:46', 866, 866, 1);
@@ -70,5 +59,8 @@ INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`
 INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (47, 'yulingkai2045@outlook.com', 'yupaopao990', '2023-01-22 22:55:46', '2023-01-22 22:55:46', NULL, NULL, 0);
 INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (48, 'yulingkai2046@outlook.com', 'yupaopao990', '2023-01-22 22:55:46', '2023-01-22 22:55:46', NULL, NULL, 0);
 INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (49, 'yulingkai2047@outlook.com', 'yupaopao990', '2023-01-22 22:55:46', '2023-01-22 22:55:46', 87, NULL, 1);
-INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (50, 'yulingkai2048@outlook.com', 'yupaopao990', '0023-01-22 22:55:46', '0023-01-22 22:55:46', NULL, NULL, 0);
-INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (51, 'yulingkai2049@outlook.com', 'yupaopao990', '0023-01-22 22:55:46', '0023-01-22 22:55:46', NULL, NULL, 0);
+INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (50, 'yulingkai2048@outlook.com', 'yupaopao990', '2023-01-22 22:55:46', '0023-01-22 22:55:46', NULL, NULL, 0);
+INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (51, 'yulingkai2049@outlook.com', 'yupaopao990', '2023-01-22 22:55:46', '0023-01-22 22:55:46', NULL, NULL, 0);
+INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (52, 'yulingkai2050@outlook.com', 'yupaopao990', '2023-01-22 22:55:46', '0023-01-22 22:55:46', 200, NULL, 0);
+INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (53, 'yulingkai2051@outlook.com', 'yupaopao990', '2023-01-22 22:55:46', '0023-01-22 22:55:46', 200, NULL, 0);
+INSERT INTO `microsoftrewards`.`microsoft_account` (`id`, `username`, `password`, `update_time`, `create_time`, `last_score`, `latest_score`, `status`) VALUES (54, 'yulingkai2052@outlook.com', 'yupaopao990', '2023-01-22 22:55:46', '0023-01-22 22:55:46', 200, NULL, 0);
