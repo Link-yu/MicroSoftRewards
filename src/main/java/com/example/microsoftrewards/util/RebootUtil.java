@@ -137,7 +137,7 @@ public class RebootUtil {
      * @throws Exception
      */
     public static String sendReboot(String message) throws Exception {
-        Map<String,String> map=dingDingSec("钉钉机器人的SEC");
+        Map<String,String> map=dingDingSec("SEC8d129ac10b9de9c7b1b8eaebf03702ce75b4dbd98f0cabbe87a309fe4ee25015");
         String sign = map.get("sign");
         String timestamp = map.get("timestamp");
         StringBuffer stringBuffer = new StringBuffer();
@@ -157,15 +157,15 @@ public class RebootUtil {
 
     public static void main(String[] args) {
         //text类型的消息：
-        String text=RebootUtil.setMessage(true,"我就是我,  @1825718XXXX 是不一样的烟火", Arrays.asList(""));
+        String text=RebootUtil.setMessage(true,"微软积分：我就是我,  是不一样的烟火", Arrays.asList("13018902971"));
 
         //markDown类型的消息：使用于字体加粗，超链接隐藏
         String markDown=RebootUtil.setMarkDown(true,"杭州天气","#### 杭州天气  \n > 9度，@1825718XXXX 西北风1级，空气良89，相对温度73%\n\n > ![screenshot](http://i01.lw.aliimg.com/media/lALPBbCc1ZhJGIvNAkzNBLA_1200_588.png)\n  > ###### 10点20分发布 [天气](http://www.thinkpage.cn/)",Arrays.asList(""));
 
         //钉钉机器人推送
         try {
-            String message = RebootUtil.setMessage(false, "测试", Arrays.asList(""));
-            RebootUtil.sendReboot(message);
+            String message = RebootUtil.setMessage(false, text, Arrays.asList(""));
+            RebootUtil.sendReboot(text);
         } catch (Exception e) {
             e.printStackTrace();
         }
