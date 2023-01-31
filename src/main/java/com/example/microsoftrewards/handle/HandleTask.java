@@ -16,10 +16,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import java.io.*;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
@@ -110,6 +107,7 @@ public class HandleTask {
             saveSuccessAccount("success" + "账号: " + microsoftAccount.getUsername()  + " 执行成功,共积累 " + value + " 分");
             microsoftAccount.setLastScore(microsoftAccount.getLatestScore());
             microsoftAccount.setLatestScore(value);
+            microsoftAccount.setUpdateTime(LocalDateTime.now());
             microsoftAccount.setStatus(1);
             microsoftAccountService.updateById(microsoftAccount);
             scores.add(value);
