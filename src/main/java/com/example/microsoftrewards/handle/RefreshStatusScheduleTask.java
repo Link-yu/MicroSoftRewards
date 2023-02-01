@@ -32,7 +32,7 @@ public class RefreshStatusScheduleTask {
     @Scheduled(cron = "0 0 */1 * * ?")
     public void grabPoints() {
         System.out.println("start grabPoint.");
-        if (NetworkUtil.checkNetwork()) {
+        if (NetworkUtil.isConnect()) {
             handleTask.startJob();
         } else {
             System.out.println("无法访问网络,请稍后再试.");

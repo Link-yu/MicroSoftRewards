@@ -7,6 +7,8 @@ import com.example.microsoftrewards.util.SpiderUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +39,8 @@ public class HandleTask {
     private static List<String> scores = new ArrayList<>();
 
     private static List<String> failedList = new ArrayList<>();
+
+    private static Set<String> FAILED_SET = new HashSet<>();
 
     @PostConstruct
     public void test() {
@@ -84,40 +88,58 @@ public class HandleTask {
                     }
                 });
     }
+    private WebDriver getChromeDriver() {
+        String chromeDriverPath = "/usr/local/bin/chromedriver";
+        System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments(Arrays.asList("--incognito"));
+        // 打开chrome浏览器
+        WebDriver driver = new ChromeDriver(chromeOptions);
+        return driver;
+    }
 
-    public String executeTask(MicrosoftAccount microsoftAccount) {
-        // msedgedriver.exe macOS
-//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
-        // msedgedriver.exe windows
-        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
-        // 设置指定键对值的系统属性
+    private WebDriver getEdgeDriver() {
+        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.addArguments(Arrays.asList("--incognito"));
         // 打开edge浏览器
         WebDriver driver = new EdgeDriver(edgeOptions);
+        return driver;
+    }
+
+    public String executeTask(MicrosoftAccount microsoftAccount) {
+        // msedgedriver.exe macOS
+//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+        // msedgedriver.exe windows
+//        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+        // 设置指定键对值的系统属性
+//        System.setProperty("webdriver.edge.driver", msedgeDriverPath);
+//        EdgeOptions edgeOptions = new EdgeOptions();
+//        edgeOptions.addArguments(Arrays.asList("--incognito"));
+        // 打开edge浏览器
+        WebDriver driver = getEdgeDriver();
 
         try {
             driver.get("https://cn.bing.com/");
-            Thread.sleep(5000);
+            Thread.sleep(6000);
             By loginInput = By.id("id_s");
             driver.findElement(loginInput).click();
 
-            Thread.sleep(5000);
+            Thread.sleep(6000);
             By loginNameInput = By.name("loginfmt");
             driver.findElement(loginNameInput).sendKeys(microsoftAccount.getUsername());
             driver.findElement(loginNameInput).sendKeys(Keys.ENTER);
 
-            Thread.sleep(5000);
+            Thread.sleep(6000);
             By passwordInput = By.name("passwd");
             driver.findElement(passwordInput).sendKeys(microsoftAccount.getPassword());
             driver.findElement(passwordInput).sendKeys(Keys.ENTER);
 
-            Thread.sleep(5000);
+            Thread.sleep(6000);
             By idBtnBack = By.id("idBtn_Back");
             driver.findElement(idBtnBack).click();
 
-            Thread.sleep(5000);
             search(driver, Integer.valueOf(microsoftAccount.getLastScore()));
             By rewardsId = By.id("id_rc");
             String value = driver.findElement(rewardsId).getText();
@@ -172,8 +194,8 @@ public class HandleTask {
     private void saveSuccessAccount(String userName) {
         BufferedWriter bufferedWriter = null;
         try {
-//            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
-            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
+            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
+//            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
             OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(fileName, true));
             bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(userName);

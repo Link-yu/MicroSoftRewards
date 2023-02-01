@@ -137,7 +137,7 @@ public class RebootUtil {
      * @throws Exception
      */
     public static String sendReboot(String message) throws Exception {
-        if(!NetworkUtil.checkNetwork()) {
+        if(!NetworkUtil.isConnect()) {
             System.out.println("网络不通");
             throw new Exception("");
         }
