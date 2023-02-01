@@ -137,6 +137,10 @@ public class RebootUtil {
      * @throws Exception
      */
     public static String sendReboot(String message) throws Exception {
+        if(!NetworkUtil.checkNetwork()) {
+            System.out.println("网络不通");
+            throw new Exception("");
+        }
         Map<String,String> map=dingDingSec("SEC8d129ac10b9de9c7b1b8eaebf03702ce75b4dbd98f0cabbe87a309fe4ee25015");
         String sign = map.get("sign");
         String timestamp = map.get("timestamp");

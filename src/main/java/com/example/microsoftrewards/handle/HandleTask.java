@@ -2,6 +2,7 @@ package com.example.microsoftrewards.handle;
 
 import com.example.microsoftrewards.entity.MicrosoftAccount;
 import com.example.microsoftrewards.service.IMicrosoftAccountService;
+import com.example.microsoftrewards.util.RebootUtil;
 import com.example.microsoftrewards.util.SpiderUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -35,6 +36,8 @@ public class HandleTask {
 
     private static List<String> scores = new ArrayList<>();
 
+    private static List<String> failedList = new ArrayList<>();
+
     @PostConstruct
     public void test() {
         startJob();
@@ -42,16 +45,31 @@ public class HandleTask {
     public void startJob() {
         hotNewsUrls.addAll(Arrays.asList("realtime", "car", "movie", "novel", "teleplay", "game"));
         refreshPoint();
-        printPoint();
+        sendMessage();
     }
 
-    private void printPoint() {
+    private int calculateScore() {
         int total = 0;
         for (int i = 0;i < scores.size(); i++) {
             total+=Integer.valueOf(scores.get(i));
         }
 
         System.out.println("总计积分: " + total);
+        return total;
+    }
+
+    private void sendMessage() {
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("今日累计积分:").append(calculateScore()).append("\n");
+        buffer.append("失败列表").append("\n");
+        failedList.forEach(userName -> {
+            buffer.append(userName).append("\n");
+        });
+        try {
+            RebootUtil.sendReboot(RebootUtil.setMessage(false,buffer.toString(), Arrays.asList("13018902971")));
+        } catch (Exception exception) {
+            System.out.println("发送消息失败");
+        }
     }
 
     private void refreshPoint() {
@@ -115,6 +133,7 @@ public class HandleTask {
             System.out.println("账号：" + microsoftAccount.getUsername()  + " 执行失败!" + "原因是" + exception.getMessage());
             microsoftAccount.setStatus(0);
             microsoftAccountService.updateById(microsoftAccount);
+            failedList.add(microsoftAccount.getUsername());
             saveSuccessAccount("failed " + "账号: " + microsoftAccount.getUsername() );
         } finally {
             driver.close();
