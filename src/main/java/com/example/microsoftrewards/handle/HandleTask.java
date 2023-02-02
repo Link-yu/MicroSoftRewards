@@ -183,10 +183,6 @@ public class HandleTask {
             size = 40;
         }
         Thread.sleep(5000);
-        while (isElementPresent(driver, "id_rc")) {
-            Thread.sleep(5000);
-            login(driver, microsoftAccount);
-        }
         for (int i = 0; i < size; i++) {
             driver.get("https://cn.bing.com/search?q=" + hotNews.get(i));
             // 给你1秒钟预览答案时间
