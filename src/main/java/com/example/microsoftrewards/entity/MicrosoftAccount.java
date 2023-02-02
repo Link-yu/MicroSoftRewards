@@ -35,9 +35,9 @@ public class MicrosoftAccount implements Serializable {
      */
     private String password;
 
-    private String lastScore;
+    private Integer lastScore;
 
-    private String latestScore;
+    private Integer latestScore;
 
     private int status;
 
