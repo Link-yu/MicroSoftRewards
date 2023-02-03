@@ -80,15 +80,17 @@ public class HandleTask {
 
     private void refreshPoint() {
         List<MicrosoftAccount> list = microsoftAccountService.list();
-        list.stream().filter(microsoftAccount -> microsoftAccount.getStatus() == 0)
-                .collect(Collectors.toList()).forEach(microsoftAccount -> {
-                    executeTask(microsoftAccount);
-                    try {
-                        Thread.sleep(5000);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                });
+        List<MicrosoftAccount> taskList = list.stream().filter(microsoftAccount -> microsoftAccount.getStatus() == 0)
+                .collect(Collectors.toList());
+        System.out.println(taskList.size());
+        taskList.forEach(microsoftAccount -> {
+            executeTask(microsoftAccount);
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
     private WebDriver getChromeDriver() {
         String chromeDriverPath = "/usr/local/bin/chromedriver";
@@ -127,24 +129,36 @@ public class HandleTask {
             search(driver, microsoftAccount);
             By rewardsId = By.id("id_rc");
             String value = driver.findElement(rewardsId).getText();
-            System.out.println("账号：" + microsoftAccount.getUsername() + " 执行成功!");
-            saveSuccessAccount("success" + "账号: " + microsoftAccount.getUsername()  + " 执行成功,共积累 " + value + " 分");
-            microsoftAccount.setLastScore(microsoftAccount.getLatestScore());
-            microsoftAccount.setLatestScore(Integer.valueOf(value));
-            microsoftAccount.setUpdateTime(LocalDateTime.now());
-            microsoftAccount.setStatus(1);
-            microsoftAccountService.updateById(microsoftAccount);
-            scores.add(value);
+            if (Integer.valueOf(value) > microsoftAccount.getLatestScore()) {
+                System.out.println("账号：" + microsoftAccount.getUsername() + " 执行成功!");
+                saveSuccessAccount("success" + "账号: " + microsoftAccount.getUsername()  + " 执行成功,共积累 " + value + " 分");
+                saveSuccessToDB(microsoftAccount, Integer.valueOf(value));
+                scores.add(value);
+            } else {
+                throw new Exception("未登陆成功");
+            }
         } catch (Exception exception) {
             System.out.println("账号：" + microsoftAccount.getUsername()  + " 执行失败!" + "原因是" + exception.getMessage());
-            microsoftAccount.setStatus(0);
-            microsoftAccountService.updateById(microsoftAccount);
+            saveFailedToDB(microsoftAccount);
             failedList.add(microsoftAccount.getUsername());
             saveSuccessAccount("failed " + "账号: " + microsoftAccount.getUsername() );
         } finally {
             driver.close();
         }
         return "success";
+    }
+
+    private void saveSuccessToDB(MicrosoftAccount microsoftAccount, Integer value) {
+        microsoftAccount.setLastScore(microsoftAccount.getLatestScore());
+        microsoftAccount.setLatestScore(value);
+        microsoftAccount.setUpdateTime(LocalDateTime.now());
+        microsoftAccount.setStatus(1);
+        microsoftAccountService.updateById(microsoftAccount);
+    }
+
+    private void saveFailedToDB(MicrosoftAccount microsoftAccount) {
+        microsoftAccount.setStatus(0);
+        microsoftAccountService.updateById(microsoftAccount);
     }
 
     private void login(WebDriver driver, MicrosoftAccount microsoftAccount) throws InterruptedException {
