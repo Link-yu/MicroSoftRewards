@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.PostConstruct;
 import java.io.*;
@@ -82,15 +83,20 @@ public class HandleTask {
         List<MicrosoftAccount> list = microsoftAccountService.list();
         List<MicrosoftAccount> taskList = list.stream().filter(microsoftAccount -> microsoftAccount.getStatus() == 0)
                 .collect(Collectors.toList());
-        System.out.println(taskList.size());
-        taskList.forEach(microsoftAccount -> {
-            executeTask(microsoftAccount);
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        });
+        while (!CollectionUtils.isEmpty(taskList)) {
+            System.out.println(taskList.size());
+            taskList.forEach(microsoftAccount -> {
+                executeTask(microsoftAccount);
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            list = microsoftAccountService.list();
+            taskList = list.stream().filter(microsoftAccount -> microsoftAccount.getStatus() == 0)
+                    .collect(Collectors.toList());
+        }
     }
     private WebDriver getChromeDriver() {
         String chromeDriverPath = "/usr/local/bin/chromedriver";
@@ -114,9 +120,9 @@ public class HandleTask {
 
     public String executeTask(MicrosoftAccount microsoftAccount) {
         // msedgedriver.exe macOS
-//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         // msedgedriver.exe windows
-        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+//        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
 //         设置指定键对值的系统属性?
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
@@ -167,17 +173,22 @@ public class HandleTask {
         By loginInput = By.id("id_s");
         driver.findElement(loginInput).click();
 
-        Thread.sleep(6000);
+
+        Thread.sleep(10000);
+        System.out.println("输入用户名 " + microsoftAccount.getUsername());
         By loginNameInput = By.name("loginfmt");
         driver.findElement(loginNameInput).sendKeys(microsoftAccount.getUsername());
         driver.findElement(loginNameInput).sendKeys(Keys.ENTER);
 
-        Thread.sleep(6000);
+        Thread.sleep(10000);
+        System.out.println("输入密码");
         By passwordInput = By.name("passwd");
         driver.findElement(passwordInput).sendKeys(microsoftAccount.getPassword());
         driver.findElement(passwordInput).sendKeys(Keys.ENTER);
 
-        Thread.sleep(6000);
+
+        Thread.sleep(10000);
+        System.out.println("不保持登录");
         By idBtnBack = By.id("idBtn_Back");
         driver.findElement(idBtnBack).click();
     }
@@ -196,7 +207,7 @@ public class HandleTask {
             hotNews.addAll(SpiderUtil.grabBaiduHotNewsJson(PREFIX_URL + url));
             size = 40;
         }
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         for (int i = 0; i < size; i++) {
             driver.get("https://cn.bing.com/search?q=" + hotNews.get(i));
             // 给你1秒钟预览答案时间
@@ -224,8 +235,8 @@ public class HandleTask {
     private void saveSuccessAccount(String userName) {
         BufferedWriter bufferedWriter = null;
         try {
-//            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
-            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
+            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
+//            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
             OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(fileName, true));
             bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(userName);
