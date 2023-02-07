@@ -1,5 +1,7 @@
 package com.example.microsoftrewards.handle;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.microsoftrewards.entity.MicrosoftAccount;
 import com.example.microsoftrewards.service.IMicrosoftAccountService;
 import com.example.microsoftrewards.util.RebootUtil;
@@ -11,8 +13,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -21,11 +24,10 @@ import javax.annotation.PostConstruct;
 import java.io.*;
 import java.time.LocalDateTime;
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Component
 public class HandleTask {
-
+    private static final Logger log = LoggerFactory.getLogger(HandleTask.class);
     private final static String PREFIX_URL = "https://top.baidu.com/board?tab=";
 
     private final static Random random = new Random();
@@ -42,36 +44,40 @@ public class HandleTask {
     private static List<String> failedList = new ArrayList<>();
 
     @PostConstruct
-    public void test() {
+    public void test() throws InterruptedException {
+        log.info("start task");
         startJob();
+        log.info("end task");
     }
-    public void startJob() {
+    public void startJob() throws InterruptedException {
         hotNewsUrls.addAll(Arrays.asList("realtime", "car", "movie", "novel", "teleplay", "game"));
         refreshPoint();
         sendMessage();
     }
 
     private String calculateScore() {
+        StringBuffer failedList = new StringBuffer();
         List<MicrosoftAccount> accountList = microsoftAccountService.list();
         Integer latestScore = 0;
         Integer lastScore = 0;
         for (int i = 0; i < accountList.size(); i++) {
-            lastScore += accountList.get(i).getLastScore();
-            latestScore += accountList.get(i).getLatestScore();
+            MicrosoftAccount microsoftAccount = accountList.get(i);
+            lastScore += microsoftAccount.getLastScore();
+            latestScore += microsoftAccount.getLatestScore();
+            if (microsoftAccount.getStatus() == 0) {
+                failedList.append(microsoftAccount.getUsername()).append("\n");
+            }
         }
         StringBuffer buffer = new StringBuffer();
         buffer.append("总计积分: ").append(latestScore).append("\n");
         buffer.append("今日新增积分：").append(String.valueOf(latestScore - lastScore)).append("\n");
+        buffer.append("失败列表").append("\n").append(failedList);
         return buffer.toString();
     }
 
     private void sendMessage() {
         StringBuffer buffer = new StringBuffer();
         buffer.append(calculateScore());
-        buffer.append("失败列表").append("\n");
-        failedList.forEach(userName -> {
-            buffer.append(userName).append("\n");
-        });
         try {
             RebootUtil.sendReboot(RebootUtil.setMessage(false,buffer.toString(), Arrays.asList("13018902971")));
         } catch (Exception exception) {
@@ -79,23 +85,26 @@ public class HandleTask {
         }
     }
 
-    private void refreshPoint() {
-        List<MicrosoftAccount> list = microsoftAccountService.list();
-        List<MicrosoftAccount> taskList = list.stream().filter(microsoftAccount -> microsoftAccount.getStatus() == 0)
-                .collect(Collectors.toList());
-        while (!CollectionUtils.isEmpty(taskList)) {
-            System.out.println(taskList.size());
-            taskList.forEach(microsoftAccount -> {
+    private void refreshPoint() throws InterruptedException {
+        Page<MicrosoftAccount> page = new Page<>(1, 10);
+        QueryWrapper<MicrosoftAccount> wrapper = new QueryWrapper<>();
+        wrapper.eq("status", 0);
+        wrapper.lt("fail_count", 3);
+        Page<MicrosoftAccount> pageResult = microsoftAccountService.page(page, wrapper);
+        List<MicrosoftAccount> list = pageResult.getRecords();
+        while (!CollectionUtils.isEmpty(list)) {
+            System.out.println(list.size());
+            list.forEach(microsoftAccount -> {
                 executeTask(microsoftAccount);
                 try {
                     Thread.sleep(5000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
+
             });
-            list = microsoftAccountService.list();
-            taskList = list.stream().filter(microsoftAccount -> microsoftAccount.getStatus() == 0)
-                    .collect(Collectors.toList());
+            Thread.sleep(100000);
+            list = microsoftAccountService.page(page, wrapper).getRecords();
         }
     }
     private WebDriver getChromeDriver() {
@@ -120,9 +129,9 @@ public class HandleTask {
 
     public String executeTask(MicrosoftAccount microsoftAccount) {
         // msedgedriver.exe macOS
-        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+//        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
         // msedgedriver.exe windows
-//        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
 //         设置指定键对值的系统属性?
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
@@ -139,14 +148,12 @@ public class HandleTask {
                 System.out.println("账号：" + microsoftAccount.getUsername() + " 执行成功!");
                 saveSuccessAccount("success" + "账号: " + microsoftAccount.getUsername()  + " 执行成功,共积累 " + value + " 分");
                 saveSuccessToDB(microsoftAccount, Integer.valueOf(value));
-                scores.add(value);
             } else {
                 throw new Exception("未登陆成功");
             }
         } catch (Exception exception) {
             System.out.println("账号：" + microsoftAccount.getUsername()  + " 执行失败!" + "原因是" + exception.getMessage());
             saveFailedToDB(microsoftAccount);
-            failedList.add(microsoftAccount.getUsername());
             saveSuccessAccount("failed " + "账号: " + microsoftAccount.getUsername() );
         } finally {
             driver.close();
@@ -159,11 +166,13 @@ public class HandleTask {
         microsoftAccount.setLatestScore(value);
         microsoftAccount.setUpdateTime(LocalDateTime.now());
         microsoftAccount.setStatus(1);
+        microsoftAccount.setFailCount(0);
         microsoftAccountService.updateById(microsoftAccount);
     }
 
     private void saveFailedToDB(MicrosoftAccount microsoftAccount) {
         microsoftAccount.setStatus(0);
+        microsoftAccount.setFailCount(microsoftAccount.getFailCount()+1);
         microsoftAccountService.updateById(microsoftAccount);
     }
 
@@ -235,8 +244,8 @@ public class HandleTask {
     private void saveSuccessAccount(String userName) {
         BufferedWriter bufferedWriter = null;
         try {
-            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
-//            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
+//            String fileName = "/Users/yulingkai/File/ibuscloud/code/MicroSoftRewards/src/main/resources/templates/result.txt";
+            String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\result.txt";
             OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(fileName, true));
             bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(userName);

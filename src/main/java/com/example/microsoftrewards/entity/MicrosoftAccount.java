@@ -41,6 +41,8 @@ public class MicrosoftAccount implements Serializable {
 
     private int status;
 
+    private int failCount;
+
     /**
      * 更新时间
      */

@@ -18,7 +18,7 @@ public class RefreshStatusScheduleTask {
     @Autowired
     private IMicrosoftAccountService microsoftAccountService;
 
-    @Scheduled(cron = "0 0 23 * * ?")
+//    @Scheduled(cron = "0 0 23 * * ?")
     public void refreshStatus() {
         List<MicrosoftAccount> list = microsoftAccountService.list();
         list.forEach(microsoftAccount -> {
@@ -29,8 +29,8 @@ public class RefreshStatusScheduleTask {
         });
     }
 
-    @Scheduled(cron = "0 0 */1 * * ?")
-    public void grabPoints() {
+//    @Scheduled(cron = "0 0 */1 * * ?")
+    public void grabPoints() throws InterruptedException {
         System.out.println("start grabPoint.");
         if (NetworkUtil.isConnect()) {
             handleTask.startJob();

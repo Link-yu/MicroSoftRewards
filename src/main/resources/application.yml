@@ -11,3 +11,9 @@ mybatis-plus:
     auto-mapping-behavior: full
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath*:mapper/**/*Mapper.xml
+
+logging:
+  file:
+    name: app.log
+  level:
+    root: info

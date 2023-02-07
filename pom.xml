@@ -39,7 +39,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid-spring-boot-starter</artifactId>
-			<version>1.1.10</version>
+			<version>1.1.21</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -59,7 +59,7 @@
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
-			<version>3.1.0</version>
+			<version>3.4.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -70,7 +70,7 @@
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-generator</artifactId>
-			<version>3.1.0</version>
+			<version>3.4.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
