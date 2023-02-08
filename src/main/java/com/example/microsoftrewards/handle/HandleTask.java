@@ -44,12 +44,12 @@ public class HandleTask {
     private static List<String> failedList = new ArrayList<>();
 
     @PostConstruct
-    public void test() throws InterruptedException {
+    public void test() throws Exception {
         log.info("start task");
         startJob();
         log.info("end task");
     }
-    public void startJob() throws InterruptedException {
+    public void startJob() throws Exception {
         hotNewsUrls.addAll(Arrays.asList("realtime", "car", "movie", "novel", "teleplay", "game"));
         refreshPoint();
         sendMessage();
@@ -85,7 +85,7 @@ public class HandleTask {
         }
     }
 
-    private void refreshPoint() throws InterruptedException {
+    private void refreshPoint() throws Exception {
         Page<MicrosoftAccount> page = new Page<>(1, 10);
         QueryWrapper<MicrosoftAccount> wrapper = new QueryWrapper<>();
         wrapper.eq("status", 0);
@@ -93,7 +93,7 @@ public class HandleTask {
         Page<MicrosoftAccount> pageResult = microsoftAccountService.page(page, wrapper);
         List<MicrosoftAccount> list = pageResult.getRecords();
         while (!CollectionUtils.isEmpty(list)) {
-            System.out.println(list.size());
+            sendTaskList(list);
             list.forEach(microsoftAccount -> {
                 executeTask(microsoftAccount);
                 try {
@@ -106,6 +106,15 @@ public class HandleTask {
             Thread.sleep(100000);
             list = microsoftAccountService.page(page, wrapper).getRecords();
         }
+    }
+
+    private void sendTaskList(List<MicrosoftAccount> list) throws Exception {
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("开始任务:").append("\n");
+        list.forEach(microsoftAccount -> {
+            buffer.append(microsoftAccount.getUsername()).append("\n");
+        });
+        RebootUtil.sendReboot(buffer.toString());
     }
     private WebDriver getChromeDriver() {
         String chromeDriverPath = "/usr/local/bin/chromedriver";
