@@ -114,7 +114,7 @@ public class HandleTask {
         list.forEach(microsoftAccount -> {
             buffer.append(microsoftAccount.getUsername()).append("\n");
         });
-        RebootUtil.sendReboot(buffer.toString());
+        RebootUtil.sendReboot(RebootUtil.setMessage(false,buffer.toString(), Arrays.asList()));
     }
     private WebDriver getChromeDriver() {
         String chromeDriverPath = "/usr/local/bin/chromedriver";
