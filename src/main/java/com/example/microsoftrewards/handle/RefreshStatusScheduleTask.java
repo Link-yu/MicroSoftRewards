@@ -30,7 +30,7 @@ public class RefreshStatusScheduleTask {
     }
 
 //    @Scheduled(cron = "0 0 */1 * * ?")
-    public void grabPoints() throws InterruptedException {
+    public void grabPoints() throws Exception {
         System.out.println("start grabPoint.");
         if (NetworkUtil.isConnect()) {
             handleTask.startJob();
