@@ -18,21 +18,23 @@ public class RefreshStatusScheduleTask {
     @Autowired
     private IMicrosoftAccountService microsoftAccountService;
 
-//    @Scheduled(cron = "0 0 23 * * ?")
-    public void refreshStatus() {
+    @Scheduled(cron = "0 0 1 * * ?")
+    public void refreshStatus() throws Exception {
         List<MicrosoftAccount> list = microsoftAccountService.list();
         list.forEach(microsoftAccount -> {
             MicrosoftAccount update = new MicrosoftAccount();
             BeanUtils.copyProperties(microsoftAccount, update);
             update.setStatus(0);
+            update.setFailCount(0);
             microsoftAccountService.updateById(update);
         });
+        handleTask.startJob();
     }
 
-//    @Scheduled(cron = "0 0 */1 * * ?")
+//    @Scheduled(cron = "0 0 5 * * ?")
     public void grabPoints() throws Exception {
         System.out.println("start grabPoint.");
-        if (NetworkUtil.isConnect()) {
+        if (!NetworkUtil.isConnect()) {
             handleTask.startJob();
         } else {
             System.out.println("无法访问网络,请稍后再试.");
