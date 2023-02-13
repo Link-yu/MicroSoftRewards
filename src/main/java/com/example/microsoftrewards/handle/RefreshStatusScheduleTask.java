@@ -1,5 +1,6 @@
 package com.example.microsoftrewards.handle;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.microsoftrewards.entity.MicrosoftAccount;
 import com.example.microsoftrewards.service.IMicrosoftAccountService;
 import com.example.microsoftrewards.util.NetworkUtil;
@@ -20,7 +21,8 @@ public class RefreshStatusScheduleTask {
 
     @Scheduled(cron = "0 0 1 * * ?")
     public void refreshStatus() throws Exception {
-        List<MicrosoftAccount> list = microsoftAccountService.list();
+        QueryWrapper<MicrosoftAccount> wrapper = new QueryWrapper<>();
+        List<MicrosoftAccount> list = microsoftAccountService.list(wrapper);
         list.forEach(microsoftAccount -> {
             MicrosoftAccount update = new MicrosoftAccount();
             BeanUtils.copyProperties(microsoftAccount, update);

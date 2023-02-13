@@ -39,18 +39,17 @@ public class HandleTask {
 
     private static List<String> hotNewsUrls = new ArrayList<>();
 
-    private static List<String> scores = new ArrayList<>();
-
-    private static List<String> failedList = new ArrayList<>();
+    private static List<String> HOT_KEYS = new ArrayList<>();
 
     @PostConstruct
     public void test() throws Exception {
         log.info("start task");
+        HOT_KEYS = SpiderUtil.grabMomoyuHot();
         startJob();
         log.info("end task");
     }
     public void startJob() throws Exception {
-        hotNewsUrls.addAll(Arrays.asList("realtime", "car", "movie", "novel", "teleplay", "game"));
+//        hotNewsUrls.addAll(Arrays.asList("realtime", "car", "movie", "novel", "teleplay", "game"));
         refreshPoint();
         sendMessage();
     }
@@ -101,9 +100,9 @@ public class HandleTask {
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-
+                Collections.shuffle(HOT_KEYS);
             });
-            Thread.sleep(100000);
+            Thread.sleep(30000);
             list = microsoftAccountService.page(page, wrapper).getRecords();
         }
     }
@@ -155,7 +154,6 @@ public class HandleTask {
             String value = driver.findElement(rewardsId).getText();
             if (Integer.valueOf(value) > microsoftAccount.getLatestScore()) {
                 System.out.println("账号：" + microsoftAccount.getUsername() + " 执行成功!");
-                saveSuccessAccount("success" + "账号: " + microsoftAccount.getUsername()  + " 执行成功,共积累 " + value + " 分");
                 saveSuccessToDB(microsoftAccount, Integer.valueOf(value));
             } else {
                 throw new Exception("未登陆成功");
@@ -163,7 +161,6 @@ public class HandleTask {
         } catch (Exception exception) {
             System.out.println("账号：" + microsoftAccount.getUsername()  + " 执行失败!" + "原因是" + exception.getMessage());
             saveFailedToDB(microsoftAccount);
-            saveSuccessAccount("failed " + "账号: " + microsoftAccount.getUsername() );
         } finally {
             driver.close();
         }
@@ -216,18 +213,13 @@ public class HandleTask {
      * @throws InterruptedException
      */
     private void search(WebDriver driver, MicrosoftAccount microsoftAccount) throws InterruptedException {
-        List<String> hotNews = new ArrayList<>();
-        String url = hotNewsUrls.get(random.nextInt(hotNewsUrls.size()));
-        hotNews.addAll(SpiderUtil.grabBaiduHotNewsJson(PREFIX_URL + url));
         int size = 15;
-        if (microsoftAccount.getLastScore() > 500) {
-            url = hotNewsUrls.get(random.nextInt(hotNewsUrls.size()));
-            hotNews.addAll(SpiderUtil.grabBaiduHotNewsJson(PREFIX_URL + url));
+        if (microsoftAccount.getLastScore() > 1000) {
             size = 40;
         }
         Thread.sleep(2000);
         for (int i = 0; i < size; i++) {
-            driver.get("https://cn.bing.com/search?q=" + hotNews.get(i));
+            driver.get("https://cn.bing.com/search?q=" + HOT_KEYS.get(i));
             // 给你1秒钟预览答案时间
             Thread.sleep(   1000);
             // 定位到必应的搜索框
