@@ -214,7 +214,7 @@ public class HandleTask {
      */
     private void search(WebDriver driver, MicrosoftAccount microsoftAccount) throws InterruptedException {
         int size = 15;
-        if (microsoftAccount.getLastScore() > 500) {
+        if (microsoftAccount.getLevel() == 2) {
             size = 40;
         }
         Thread.sleep(2000);

@@ -11,3 +11,5 @@ CREATE TABLE `microsoft_account` (
 ) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ALTER TABLE `microsoftrewards`.`microsoft_account` ADD COLUMN `fail_count` int NULL AFTER `status`;
+
+ALTER TABLE `microsoftrewards`.`microsoft_account` ADD COLUMN `level` int NULL AFTER `fail_count`;
