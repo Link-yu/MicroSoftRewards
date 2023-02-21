@@ -85,12 +85,13 @@ public class HandleTask {
     }
 
     private void refreshPoint() throws Exception {
-        Page<MicrosoftAccount> page = new Page<>(1, 10);
+        Page<MicrosoftAccount> page = new Page<>(1, 50);
         QueryWrapper<MicrosoftAccount> wrapper = new QueryWrapper<>();
         wrapper.eq("status", 0);
         wrapper.lt("fail_count", 3);
         Page<MicrosoftAccount> pageResult = microsoftAccountService.page(page, wrapper);
         List<MicrosoftAccount> list = pageResult.getRecords();
+        Collections.shuffle(list);
         while (!CollectionUtils.isEmpty(list)) {
             sendTaskList(list);
             list.forEach(microsoftAccount -> {
@@ -102,7 +103,7 @@ public class HandleTask {
                 }
                 Collections.shuffle(HOT_KEYS);
             });
-            Thread.sleep(30000);
+            Thread.sleep(5000);
             list = microsoftAccountService.page(page, wrapper).getRecords();
         }
     }
@@ -116,7 +117,7 @@ public class HandleTask {
         RebootUtil.sendReboot(RebootUtil.setMessage(false,buffer.toString(), Arrays.asList()));
     }
     private WebDriver getChromeDriver() {
-        String chromeDriverPath = "/usr/local/bin/chromedriver";
+        String chromeDriverPath = "C:\\Program Files\\Google\\Chrome\\Application\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments(Arrays.asList("--incognito"));
@@ -126,7 +127,7 @@ public class HandleTask {
     }
 
     private WebDriver getEdgeDriver() {
-        String msedgeDriverPath = "/usr/local/bin/msedgedriver";
+        String msedgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
         System.setProperty("webdriver.edge.driver", msedgeDriverPath);
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.addArguments(Arrays.asList("--incognito"));
