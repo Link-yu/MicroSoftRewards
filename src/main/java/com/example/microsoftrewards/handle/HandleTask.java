@@ -148,8 +148,10 @@ public class HandleTask {
         // 打开edge浏览器
         WebDriver driver = new EdgeDriver();
 
+
         try {
             login(driver, microsoftAccount);
+            System.out.println("开始搜索");
             search(driver, microsoftAccount);
             By rewardsId = By.id("id_rc");
             String value = driver.findElement(rewardsId).getText();
@@ -184,8 +186,10 @@ public class HandleTask {
     }
 
     private void login(WebDriver driver, MicrosoftAccount microsoftAccount) throws InterruptedException {
-        driver.get("https://cn.bing.com/");
-        Thread.sleep(6000);
+//        driver.get("https://www.baidu.com/");
+//        Thread.sleep(10000);
+        driver.get("https://cn.bing.com");
+        Thread.sleep(10000);
         By loginInput = By.id("id_s");
         driver.findElement(loginInput).click();
 
@@ -216,6 +220,7 @@ public class HandleTask {
     private void search(WebDriver driver, MicrosoftAccount microsoftAccount) throws InterruptedException {
         int size = 15;
         if (microsoftAccount.getLevel() == 2) {
+
             size = 40;
         }
         Thread.sleep(2000);

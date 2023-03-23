@@ -55,5 +55,4 @@ public class NetworkUtil {
         }
         return connect;
     }
-
 }

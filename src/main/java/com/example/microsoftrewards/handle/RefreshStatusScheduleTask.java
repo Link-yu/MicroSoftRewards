@@ -19,9 +19,10 @@ public class RefreshStatusScheduleTask {
     @Autowired
     private IMicrosoftAccountService microsoftAccountService;
 
-    @Scheduled(cron = "0 0 1 * * ?")
+//    @Scheduled(cron = "0 0 1 * * ?")
     public void refreshStatus() throws Exception {
         QueryWrapper<MicrosoftAccount> wrapper = new QueryWrapper<>();
+        wrapper.eq("status", 1);
         List<MicrosoftAccount> list = microsoftAccountService.list(wrapper);
         list.forEach(microsoftAccount -> {
             MicrosoftAccount update = new MicrosoftAccount();
