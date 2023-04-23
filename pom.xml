@@ -15,7 +15,7 @@
 	<description>MicroSoftRewards</description>
 	<properties>
 		<java.version>1.8</java.version>
-		<selenium.version>4.7.2</selenium.version>
+		<selenium.version>4.8.3</selenium.version>
 		<fastjson.version>1.2.60</fastjson.version>
 		<jsoup.version>1.12.1</jsoup.version>
 	</properties>
@@ -85,6 +85,10 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			<version>4.3.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
 		</dependency>
 	</dependencies>
 

@@ -34,14 +34,10 @@ public class RefreshStatusScheduleTask {
         handleTask.startJob();
     }
 
-//    @Scheduled(cron = "0 0 5 * * ?")
+    @Scheduled(cron = "0 0 12 * * ?")
     public void grabPoints() throws Exception {
         System.out.println("start grabPoint.");
-        if (!NetworkUtil.isConnect()) {
-            handleTask.startJob();
-        } else {
-            System.out.println("无法访问网络,请稍后再试.");
-        }
+//        handleTask.startJob();
         System.out.println("end grabPoint.");
     }
 }

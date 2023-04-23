@@ -44,6 +44,10 @@ public class MicrosoftAccount implements Serializable {
     private int failCount;
 
     private int level;
+
+    private int count;
+
+    private String phone;
     /**
      * 更新时间
      */
