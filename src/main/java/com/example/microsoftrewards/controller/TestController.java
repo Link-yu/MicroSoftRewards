@@ -2,6 +2,7 @@ package com.example.microsoftrewards.controller;
 
 import com.example.microsoftrewards.entity.MicrosoftAccount;
 import com.example.microsoftrewards.service.IMicrosoftAccountService;
+import com.example.microsoftrewards.util.ReadFile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,14 +10,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 @RestController
 public class TestController {
     @Autowired
     private IMicrosoftAccountService microsoftAccountService;
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String test(String s) {
+        String[] funcArray = s.split(",");
+        List<String> set = Arrays.asList(funcArray);
+        ReadFile.readCfg(set);
+        return "success";
+    }
     @RequestMapping(value = "/addAccount", method = RequestMethod.POST)
     public String addAccount(@RequestBody String userName) throws InterruptedException {
 //        List<String> names = Arrays.asList(userNames);

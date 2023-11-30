@@ -1,0 +1,26 @@
+			int32_t         &        		BranchNo;                 &   /**< 营业部号*/
+			char            &     			ClientId[19];             &       /**< 客户编号*/
+			char            &         		ClientName[61];           &       /**< 客户姓名*/
+			char            &  				FundAccount[19];          &       /**< 资产账户*/
+			double 			&				CashAsset;  				&						///现金资产
+			double 			&				MarketValue;  				&		///证券市值
+			double 			&				CollateralAsset;  			&			///担保资产
+			double 			&				TotalDebit;  				&		///负债总额
+			double 			&				PerCollateralRatio;  		&				///个人维持担保比例
+			double 			&				AvailableMargin;  			&			///可用保证金
+			double 			&				UsedMargin;  				&		///已用保证金
+			double 			&				MarginBuyQuota;  			&			///融资额度上限
+			double 			&				MarginBuyAvailableQuota;  &					///融资可用额度
+			double 			&				MarginBuyCompactBalance;  &					///融资合约金额
+			double 			&				MarginBuyCompactFare;  		&				///融资合约费用
+			double 			&				MarginBuyCompactInterest; &						///融资合约利息
+			double 			&				MarginBuyProfit; 			&			 ///融资合约盈亏
+			double 			&				ShortSellQuota;  			&			///融券额度上限
+			double 			&				ShortSellAvailableQuota;  &					///融券可用额度
+			double 			&				ShortSellCompactBalance;  &					///融券合约金额
+			double 			&				ShortSellCompactFare;  		&				///融券合约费用
+			double 			&				ShortSellCompactInterest; &						///融券合约利息
+			double 			&				ShortSellProfit;  			&			///融券合约盈亏
+			double 			&				FetchBalance;  				&		///可取金额
+			int32_t			&        		RowCount;	              &  						 //TotalAction=1时表示总的可查询条数
+			double          &                AssureEnBuyBalance;      &   						 //买担保品可用资金
