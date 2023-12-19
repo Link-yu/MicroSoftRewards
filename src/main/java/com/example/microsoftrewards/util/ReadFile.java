@@ -23,6 +23,11 @@ public final class ReadFile {
 //        map.put()
     }
 
+    public static void main(String[] args) {
+        List<String> set = Arrays.asList("10599");
+        ReadFile.readCfg(set);
+    }
+
     public static void readLine() {
         File file = new File(fileName);
         List<String> list = new ArrayList<>();

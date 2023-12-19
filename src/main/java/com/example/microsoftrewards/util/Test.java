@@ -1,13 +1,32 @@
 package com.example.microsoftrewards.util;
 
-import java.util.function.Function;
-import java.util.function.IntBinaryOperator;
-import java.util.function.IntConsumer;
-import java.util.function.IntPredicate;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+import java.util.function.*;
+import java.util.stream.Stream;
 
 public class Test {
     public static void main(String[] args) {
-        foreachArr(value -> System.out.println(value));
+        Optional<String> sss = Optional.ofNullable("sss");
+
+        if (sss.filter(s -> s.equals("ss")).isPresent()) {
+            System.out.println("sss");
+        }
+    }
+
+    public static void testMap() {
+        Map<String, String> maps = new HashMap<>();
+        maps.put("1", "1");
+        maps.put("3", "2");
+        maps.put("9", "3");
+        Optional<Integer> reduce = maps.entrySet().stream()
+                .map(stringStringEntry -> Integer.valueOf(stringStringEntry.getKey()))
+                .reduce((integer, integer2) -> {
+                    return integer > integer2 ? integer:integer2;
+                });
+        System.out.println(reduce.get());
     }
 
     public static void foreachArr(IntConsumer consumer) {
@@ -21,6 +40,15 @@ public class Test {
         String str = "123456";
         R result = function.apply(str);
         return result;
+    }
+    public static void test() {
+        Integer[] arr = {1, 2, 3, 4,5,6,7,8,9,10};
+        Arrays.stream(arr).map(new Function<Integer, String>() {
+            @Override
+            public String apply(Integer integer) {
+                return String.valueOf(integer);
+            }
+        });
     }
 
     public static int calculateName(IntBinaryOperator operator) {
