@@ -1,9 +1,14 @@
 package com.example.microsoftrewards.excel;
 
+import com.alibaba.excel.annotation.ExcelIgnore;
+import com.alibaba.excel.annotation.ExcelProperty;
+
 public class Excel {
 
+    @ExcelProperty(value = "功能号", order = 1)
     private String funcNo;
 
+    @ExcelProperty(value = "功能名称")
     private String funcName;
     private String input;
     private String enName;

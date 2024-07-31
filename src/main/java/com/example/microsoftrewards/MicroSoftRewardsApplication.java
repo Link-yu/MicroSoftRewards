@@ -13,5 +13,4 @@ public class MicroSoftRewardsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MicroSoftRewardsApplication.class, args);
 	}
-
 }

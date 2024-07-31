@@ -1,5 +1,6 @@
 package com.example.microsoftrewards.util;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,11 +10,9 @@ import java.util.stream.Stream;
 
 public class Test {
     public static void main(String[] args) {
-        Optional<String> sss = Optional.ofNullable("sss");
-
-        if (sss.filter(s -> s.equals("ss")).isPresent()) {
-            System.out.println("sss");
-        }
+        Double value = 0.00005;
+        BigDecimal bigDecimal = BigDecimal.valueOf(value);
+        System.out.println(bigDecimal.stripTrailingZeros().toPlainString());
     }
 
     public static void testMap() {

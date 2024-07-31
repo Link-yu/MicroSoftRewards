@@ -2,9 +2,12 @@ package com.example.microsoftrewards.util;
 
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.ExcelWriter;
+import com.alibaba.excel.support.ExcelTypeEnum;
 import com.alibaba.excel.write.metadata.WriteSheet;
 import com.example.microsoftrewards.excel.Excel;
+import com.example.microsoftrewards.excel.F27207Export;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.boot.system.ApplicationHome;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,77 +15,26 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
-public final class ReadFile {
+public class ReadCfgTool {
 
 
-    private static final String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\crdt.txt";
+    private static final String fileName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\opt.cfg";
 
-    private static final String excelName = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\data.xlsx";
+    private static final String excelName = "data.csv";
 
     private static final String PREFIX = "//@funcNo(";
     private static final HashMap map = new HashMap();
-    static {
-//        map.put()
-    }
-
-
-    private static Map<String, String> getHashMap() {
-        Map<String, String> map = new HashMap<>();
-        map.put("27291","普通委托性能统计");
-        return map;
-    }
-
-    private static Map<String, String> getLdp() {
-        Map<String, String> map = new HashMap<>();
-        map.put("27291","ldp");
-        return map;
-    }
 
     public static void main(String[] args) {
+        List<String> set = Arrays.asList("27354");
         List<String> failedList = new ArrayList<>();
-        ReadFile.readCfg(failedList);
+        ReadCfgTool readCfg = new ReadCfgTool();
+        readCfg.readCfg(failedList);
     }
 
-
-    public static void readLine() {
-        File file = new File(fileName);
-        List<String> list = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line;
-            int pick = 0;
-            while ((line = br.readLine()) != null) {
-                if (!line.trim().contains("fundreal IDataset")) {
-                    continue;
-                }
-                System.out.println(line);
-                int i = 2;
-                while (i-- > 0) {
-                    line = br.readLine();
-                    System.out.println(line);
-                }
-                System.out.println("");
-            }
-        } catch (Exception e) {
-
-        }
-    }
-
-    /**
-     * 解析file指定的cfg文件，并将解析出来的入参和出参写入到excel中，调用writeToExcel()方法写入到excel中。
-     * 1. //@funcNo(27291)表示功能，其中27291表示功能号
-     * 2. //@reqMsg表示入参，嵌套两层struct，第二层嵌套的struct的内容是入参；
-     * 3. //@rspMsg表示出参，也是嵌套两层struct，第二层struct表示出参
-     *
-     */
-    public static void parserCrdtCfg() {
-        String file = "E:\\Local\\MicroSoftRewards\\src\\main\\resources\\templates\\crdt.txt";
-
-    }
-
-    public static void readCfg(List<String> failedList) {
+    public void readCfg(List<String> failedList) {
         Set<String> typeSet = getTypeSet();
         Map<String, String> map = getHashMap();
-        Map<String, String> ldpMap = getLdp();
         List<Excel> excels = new ArrayList<>();
         List<String> list = new ArrayList<>();
         File file = new File(fileName);
@@ -94,7 +46,7 @@ public final class ReadFile {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        Map<String, List<String>> funcNoMap = new HashMap<>();
         for (String funcNo : map.keySet()) {
             for (int i = 0; i < list.size();i++) {
                 if(!list.get(i).contains(funcNo)) {
@@ -103,7 +55,7 @@ public final class ReadFile {
 
                 excels.add(buildHead());
 
-
+//                for (int x = i; x < )
                 // 处理请求参数
                 if (list.get(i+1).trim().equals("reqMsg") && list.get(i+2).trim().equals("{")) {
                     boolean needHead = true;
@@ -112,7 +64,7 @@ public final class ReadFile {
                             break;
                         }
                         String line = list.get(j);
-                        excels.add(buildExcel(typeSet, line, "I", needHead ? funcNo : null, needHead ? map.get(funcNo): null, needHead ? ldpMap.get(funcNo): null));
+                        excels.add(buildExcel(typeSet, line, "I", needHead ? funcNo : null, needHead ? map.get(funcNo): null, needHead ? "ldp": null));
                         needHead = false;
                         i = j+1;
                     }
@@ -134,8 +86,7 @@ public final class ReadFile {
         writeToExcel(excels);
     }
 
-    private static Excel buildExcel(Set<String> typeSet, String line, String io, String funcNo,
-                                    String name, String ldp) {
+    private static Excel buildExcel(Set<String> typeSet, String line, String io, String funcNo, String name, String ldp) {
         String paramType = "";
         int index = 0;;
         for (String type : typeSet) {
@@ -170,29 +121,51 @@ public final class ReadFile {
         if (StringUtils.isNotBlank(ldp)) {
             excel.setFuncType(ldp);
         }
-
         excel.setInput(io);
         excel.setType(paramType);
-        excel.setEnName(underScoreToLowerCamel(tempArray[0]));
+        excel.setEnName(tempArray[0]);
         excel.setEnName2(tempArray[0]);
         excel.setChName(tempArray[1]);
         return excel;
     }
 
-    public static String underScoreToLowerCamel(String input) {
-        if (!input.contains("_")) {
-            return input;
-        }
-        StringBuilder result = new StringBuilder();
-        String[] words = input.split("_");
-        result.append(words[0]);
-        for (int i = 1; i < words.length; i++) {
-            result.append(Character.toUpperCase(words[i].charAt(0)))
-                    .append(words[i].substring(1));
-        }
-        return result.toString();
+    private static Map<String, String> getHashMap() {
+        Map<String, String> map = new HashMap<>();
+        map.put("27202","资金查询");
+//        map.put("11241","专项头寸信息查询");
+//        map.put("11249","头寸账户信息查询");
+//        map.put("11271","个人信用资产信息查询");
+//        map.put("11209","会话信息查询");
+//        map.put("11210","单客户后台二级费用查询");
+//        map.put("11212","单客户场内开放式基金费用查询");
+//        map.put("11211","单客户两融后台二级费用查询");
+//        map.put("11213","单客户两融场内开放式基金费用查询");
+//        map.put("11280","单客户扩展信息查询");
+//        map.put("11281","单客户适当性偏好控制信息查询");
+//        map.put("11284","前台费用信息查询");
+//        map.put("7724","大宗交易费用查询");
+//        map.put("11551","单客户两融股转二级费用");
+//        map.put("11218","单客户合约利率查询");
+//        map.put("11219","单客户合约优惠利率查询");
+//        map.put("11221","单客户个人担保证券资格查询");
+//        map.put("11222","单客户个人标的证券资格查询");
+//        map.put("11223","单客户维持担保比例查询");
+//        map.put("11237","单客户信用合同查询");
+//        map.put("11246","单客户费用待扣收查询");
+//        map.put("11254","两融费用待扣收流水查询");
+//        map.put("11252","融券卖出所得流水查询");
+//        map.put("10710","客户展期信息查询");
+//        map.put("11265","两融单一证券集中度个人查询");
+//        map.put("11266","两融信用证券分组集中度个人查询");
+//        map.put("11276","单客户资产汇总信息查询");
+//        map.put("11282","单客户白名单查询");
+//        map.put("11283","单客户风险客户名单查询");
+//        map.put("11290","单客户指令信息查询");
+//        map.put("11293","两融单一证券集中度套餐参数信息查询");
+//        map.put("11294","两融信用证券分组集中度套餐参数信息查询");
+//        map.put("10326","证券分组集中度白名单查询");
+        return map;
     }
-
 
     private static Set<String> getTypeSet() {
         Set<String> set = new HashSet<>();
@@ -219,7 +192,7 @@ public final class ReadFile {
         excel.setCollection("是否结果集");
         return excel;
     }
-    public static void read(String s) {
+    public void read(String s) {
         List<Excel> excels = new ArrayList<>();
         File file = new File(fileName);
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
@@ -274,14 +247,29 @@ public final class ReadFile {
         writeToExcel(excels);
     }
 
-    private static void writeToExcel(List<Excel> dataList) {
+    private void writeToExcel(List<Excel> dataList) {
         String fileName = excelName;
         File file = new File(fileName);
         file.delete();
 
-        ExcelWriter excelWriter = EasyExcel.write(fileName, Excel.class).build();
-        WriteSheet writeSheet = EasyExcel.writerSheet("Sheet1").build();
-        excelWriter.write(dataList, writeSheet);
-        excelWriter.finish();
+        EasyExcel.write(getSavePath() + "/" + fileName, clazz()).excelType(ExcelTypeEnum.CSV).sheet().doWrite(new ArrayList<>());
     }
+
+    private Class clazz() {
+        return F27207Export.class;
+    }
+
+    private String getSavePath() {
+        ApplicationHome applicationHome = new ApplicationHome(this.getClass());
+        // 保存目录位置根据项目需求可随意更改
+        return applicationHome.getDir().getParentFile().getPath();
+    }
+
+//    private int findReq(List<String> list, int i) {
+//        if (!list.get(i + 4).contains("reqMsg")) {
+//            return 0;
+//        }
+//
+//        if (!list.get(i + 5).contains())
+//    }
 }
