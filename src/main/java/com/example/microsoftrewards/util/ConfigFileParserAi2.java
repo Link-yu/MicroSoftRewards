@@ -30,13 +30,13 @@ public class ConfigFileParserAi2 {
     }
 
     private static void initFuncMap() {
-        funcMap.put("27291", "普通委托性能统计");
-        funcMap.put("27296", "多客户成交查询");
+        funcMap.put("27241", "组合申请报单");
+        funcMap.put("27236", "组合申请查询");
     }
 
     private static void initLdpMap() {
-        ldpMap.put("27291", "ldp.page");
-        ldpMap.put("27296", "ldp.page[27493]");
+        ldpMap.put("27241", "ldp");
+        ldpMap.put("27236", "ldp.page[27411]");
     }
 
     public static void parseConfigFile(String filePath) {
@@ -115,7 +115,7 @@ public class ConfigFileParserAi2 {
                     excel.setEnName(fieldName);
                     excel.setEnName2(fieldName);
                     if (StringUtils.isNotBlank(comment)) {
-                        comment = comment.replace("/**<", "").replace("*/", "").replace("*/", "").replace("//", "").trim();
+                        comment = comment.replace("/**<", "").replace("*/", "").replace("//", "").replace("/","").trim();
                         excel.setChName(comment.replaceAll("",""));
                     }
                     if("Request Parameters".equals(paramType)) {
