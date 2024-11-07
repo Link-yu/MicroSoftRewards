@@ -1,0 +1,4140 @@
+------>bat_tarbitaryinfo
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tarbitaryinfo
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tarbitaryinfo
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tarbitaryinfo
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tarbitaryinfo
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tarbitaryinfo
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tarbitaryinfo
+	batch_no,0,int,,11,0
+	batch_no,0,int,,10,0
+------>bat_tarbitaryinfo
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tarbitaryinfo
+	open_date,0,int,,11,0
+	open_date,0,int,,10,0
+------>bat_tassetcash
+	liquidate_date,0,int,,11,0
+	liquidate_date,0,int,,10,0
+------>bat_tassetcash
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tassetcash
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tassetcash
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tassetcash
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tbankassetstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tbankassetstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tbankassetstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tbankassetstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tbankassetstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tbankassetstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tbankfundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tbankfundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tbankfundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tbankfundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tbankfundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tbankstageassetstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tbankstageassetstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tbankstageassetstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tbankstageassetstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tbankstageassetstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tbankstageassetstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tbankstagefundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tbankstagefundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tbankstagefundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tbankstagefundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tbankstagefundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tbankstageunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tbankstageunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tbankstageunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tbankstageunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tbankstageunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tbankstageunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tbankstageunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tbankstageunitstock
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tbankunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tbankunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tbankunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tbankunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tbankunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tbankunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tbankunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tbankunitstock
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tcurrents
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tcurrents
+	serial_no,0,int,,11,0
+	serial_no,0,int,,10,0
+------>bat_tcurrents
+	db_date,0,int,,11,0
+	db_date,0,int,,10,0
+------>bat_tcurrents
+	db_time,0,int,,11,0
+	db_time,0,int,,10,0
+------>bat_tcurrents
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tcurrents
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>bat_tcurrents
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tcurrents
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tcurrents
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tcurrents
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tcurrents
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>bat_tcurrents
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>bat_tcurrents
+	subject_no,0,int,,11,0
+	subject_no,0,int,,10,0
+------>bat_tcurrents
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tcurrents
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>bat_tcurrents
+	busin_no,0,int,,11,0
+	busin_no,0,int,,10,0
+------>bat_tcurrents
+	clear_speed,0,int,,11,0
+	clear_speed,0,int,,10,0
+------>bat_tcurrents
+	check_operator,0,int,,11,0
+	check_operator,0,int,,10,0
+------>bat_tcurrents
+	settle_date,0,int,,11,0
+	settle_date,0,int,,10,0
+------>bat_tcurrents
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tcurrents
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tcurrents
+	busin_o32,0,int,,11,0
+	busin_o32,0,int,,10,0
+------>bat_tcurrents
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tfutureassetstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tfutureassetstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tfutureassetstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tfutureassetstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tfutureassetstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tfutureassetstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tfuturefundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tfuturefundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tfuturefundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tfuturefundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tfuturefundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tfuturestageassetstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tfuturestageassetstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tfuturestageassetstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tfuturestageassetstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tfuturestageassetstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tfuturestageassetstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tfuturestagefundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tfuturestagefundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tfuturestagefundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tfuturestagefundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tfuturestagefundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tfuturestageunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tfuturestageunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tfuturestageunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tfuturestageunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tfuturestageunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tfuturestageunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tfuturestageunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tfuturestageunitstock
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tfutureunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tfutureunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tfutureunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tfutureunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tfutureunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tfutureunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tfutureunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tfutureunitstock
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tholdingdetail
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tholdingdetail
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tholdingdetail
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tholdingdetail
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tholdingdetail
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tholdingdetail
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tholdingdetail
+	open_holder_date,0,int,,11,0
+	open_holder_date,0,int,,10,0
+------>bat_tholdingdetail
+	open_time,0,int,,11,0
+	open_time,0,int,,10,0
+------>bat_tholdingdetail
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tholdingdetail
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_thsassetstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_thsassetstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_thsassetstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_thsassetstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_thsassetstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_thsassetstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_thsfundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_thsfundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_thsfundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_thsfundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_thsfundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_thsstageassetstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_thsstageassetstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_thsstageassetstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_thsstageassetstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_thsstageassetstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_thsstageassetstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_thsstagefundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_thsstagefundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_thsstagefundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_thsstagefundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_thsstagefundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_thsstagesecurityloan
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_thsstagesecurityloan
+	trade_date,0,int,,11,0
+	trade_date,0,int,,10,0
+------>bat_thsstagesecurityloan
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_thsstagesecurityloan
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_thsstagesecurityloan
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_thsstagesecurityloan
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_thsstagesecurityloan
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_thsstagesecurityloan
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_thsstagesecurityloan
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>bat_thsstagesecurityloan
+	clear_speed,0,int,,11,0
+	clear_speed,0,int,,10,0
+------>bat_thsstagesecurityloan
+	maturity_date,0,int,,11,0
+	maturity_date,0,int,,10,0
+------>bat_thsstagesecurityloan
+	return_date,0,int,,11,0
+	return_date,0,int,,10,0
+------>bat_thsstagesecurityloan
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_thsstagesecurityloan
+	extension_total_days,0,int,,11,0
+	extension_total_days,0,int,,10,0
+------>bat_thsstagesecurityloan
+	extension_date,0,int,,11,0
+	extension_date,0,int,,10,0
+------>bat_thsstagesecurityloan
+	postpone_days,0,int,,11,0
+	postpone_days,0,int,,10,0
+------>bat_thsstagesecurityloan
+	trade_rival_no,0,int,,11,0
+	trade_rival_no,0,int,,10,0
+------>bat_thsstageunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_thsstageunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_thsstageunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_thsstageunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_thsstageunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_thsstageunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_thsstageunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_thsstageunitstock
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_thsunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_thsunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_thsunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_thsunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_thsunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_thsunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_thsunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_thsunitstock
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tliqfundproperty
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tliqfundproperty
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tliqfundproperty
+	liquidate_date,0,int,,11,0
+	liquidate_date,0,int,,10,0
+------>bat_tliqfundproperty
+	costprice_scale,6,int,,11,0
+	costprice_scale,6,int,,10,0
+------>bat_toutassetstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_toutassetstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_toutassetstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_toutassetstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_toutassetstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_toutassetstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_toutassetstock
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_toutfundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_toutfundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_toutfundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_toutfundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_toutfundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_toutfundstock
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_toutstageassetstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_toutstageassetstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_toutstageassetstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_toutstageassetstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_toutstageassetstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_toutstageassetstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_toutstageassetstock
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_toutstagefundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_toutstagefundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_toutstagefundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_toutstagefundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_toutstagefundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_toutstagefundstock
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_toutstageunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_toutstageunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_toutstageunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_toutstageunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_toutstageunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_toutstageunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_toutstageunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_toutstageunitstock
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_toutstageunitstock
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_toutunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_toutunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_toutunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_toutunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_toutunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_toutunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_toutunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_toutunitstock
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_toutunitstock
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tpendsettle
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tpendsettle
+	pendsettle_serial_no,0,int,,11,0
+	pendsettle_serial_no,0,int,,10,0
+------>bat_tpendsettle
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tpendsettle
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tpendsettle
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>bat_tpendsettle
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tpendsettle
+	asset_change_date,0,int,,11,0
+	asset_change_date,0,int,,10,0
+------>bat_tpendsettle
+	cash_settle_date,0,int,,11,0
+	cash_settle_date,0,int,,10,0
+------>bat_tpendsettle
+	cash_settle_point,0,int,,11,0
+	cash_settle_point,0,int,,10,0
+------>bat_tpendsettle
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tpendsettle
+	trade_date,0,int,,11,0
+	trade_date,0,int,,10,0
+------>bat_tpendsettle
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tshareoutinfo
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tshareoutinfo
+	register_date,0,int,,11,0
+	register_date,0,int,,10,0
+------>bat_tshareoutinfo
+	ex_date,0,int,,11,0
+	ex_date,0,int,,10,0
+------>bat_tshareoutinfo
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tshareoutinfo
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tshareoutinfo
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tstagearbitaryinfo
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstagearbitaryinfo
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstagearbitaryinfo
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstagearbitaryinfo
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstagearbitaryinfo
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstagearbitaryinfo
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tstagearbitaryinfo
+	batch_no,0,int,,11,0
+	batch_no,0,int,,10,0
+------>bat_tstagearbitaryinfo
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstagearbitaryinfo
+	open_date,0,int,,11,0
+	open_date,0,int,,10,0
+------>bat_tstageassetcash
+	liquidate_date,0,int,,11,0
+	liquidate_date,0,int,,10,0
+------>bat_tstageassetcash
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstageassetcash
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstageassetcash
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tstageassetcash
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstageexpireprofit
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstageexpireprofit
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstageexpireprofit
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstageexpireprofit
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstageexpireprofit
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tstagefinancedebt
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstagefinancedebt
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstagefinancedebt
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstagefinancedebt
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstagefinancedebt
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tstagefinancedebt
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstagefinancedebt
+	deal_date,0,int,,11,0
+	deal_date,0,int,,10,0
+------>bat_tstagefinancedebt
+	serial_no,0,int,,11,0
+	serial_no,0,int,,10,0
+------>bat_tstagefinancedebt
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstagefinancedebt
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tstagefinancedebt
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tstagehgregister
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstagehgregister
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstagehgregister
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstagehgregister
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstagehgregister
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tstagehgregister
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstagehgregister
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tstagehgregister
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>bat_tstagehgregister
+	clear_speed,0,int,,11,0
+	clear_speed,0,int,,10,0
+------>bat_tstagehgregister
+	hg_deal_date,0,int,,11,0
+	hg_deal_date,0,int,,10,0
+------>bat_tstagehgregister
+	legal_gh_date,0,int,,11,0
+	legal_gh_date,0,int,,10,0
+------>bat_tstagehgregister
+	actual_gh_date,0,int,,11,0
+	actual_gh_date,0,int,,10,0
+------>bat_tstagehgregister
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstagehgregister
+	hg_serial_no,0,int,,11,0
+	hg_serial_no,0,int,,10,0
+------>bat_tstagehgregister
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tstagehgregister
+	settle_date,0,int,,11,0
+	settle_date,0,int,,10,0
+------>bat_tstagehgregister
+	settle_point,0,int,,11,0
+	settle_point,0,int,,10,0
+------>bat_tstagehgregister
+	expire_settle_date,0,int,,11,0
+	expire_settle_date,0,int,,10,0
+------>bat_tstagehgregister
+	second_settle_point,0,int,,11,0
+	second_settle_point,0,int,,10,0
+------>bat_tstagehgregister
+	trade_date,0,int,,11,0
+	trade_date,0,int,,10,0
+------>bat_tstagehgregister_xy
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstagehgregister_xy
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstagehgregister_xy
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstagehgregister_xy
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstagehgregister_xy
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tstagehgregister_xy
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstagehgregister_xy
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstagehgregister_xy
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>bat_tstagehgregister_xy
+	hg_deal_date,0,int,,11,0
+	hg_deal_date,0,int,,10,0
+------>bat_tstagehgregister_xy
+	legal_gh_date,0,int,,11,0
+	legal_gh_date,0,int,,10,0
+------>bat_tstagehgregister_xy
+	actual_gh_date,0,int,,11,0
+	actual_gh_date,0,int,,10,0
+------>bat_tstagehgregister_xy
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tstagehgregister_xy
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tstagehgregister_xy
+	trade_rival_no,0,int,,11,0
+	trade_rival_no,0,int,,10,0
+------>bat_tstagehgregister_xy
+	grace_period,0,int,,11,0
+	grace_period,0,int,,10,0
+------>bat_tstageholdingdetail
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstageholdingdetail
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstageholdingdetail
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstageholdingdetail
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstageholdingdetail
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstageholdingdetail
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tstageholdingdetail
+	open_holder_date,0,int,,11,0
+	open_holder_date,0,int,,10,0
+------>bat_tstageholdingdetail
+	open_time,0,int,,11,0
+	open_time,0,int,,10,0
+------>bat_tstageholdingdetail
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstageholdingdetail
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tstagemortgage
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstagemortgage
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstagemortgage
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstagemortgage
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstagemortgage
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstagemortgage
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tstagemortgage
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstagemortgage
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tstagemortgage_xy
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstagemortgage_xy
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstagemortgage_xy
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstagemortgage_xy
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstagemortgage_xy
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstagemortgage_xy
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstagemortgage_xy
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tstagemortgage_xy
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tstagemortgage_xy
+	hg_deal_date,0,int,,11,0
+	hg_deal_date,0,int,,10,0
+------>bat_tstagemortgage_xy
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tstagemortgage_xy
+	mortgage_date,0,int,,11,0
+	mortgage_date,0,int,,10,0
+------>bat_tstagemortgage_xy
+	return_date,0,int,,11,0
+	return_date,0,int,,10,0
+------>bat_tstageqqzhcc
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstageqqzhcc
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstageqqzhcc
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstageqqzhcc
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstageqqzhcc
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstageqqzhcc
+	fir_intercode,0,int,,11,0
+	fir_intercode,0,int,,10,0
+------>bat_tstageqqzhcc
+	sec_intercode,0,int,,11,0
+	sec_intercode,0,int,,10,0
+------>bat_tstageqqzhcc
+	third_intercode,0,int,,11,0
+	third_intercode,0,int,,10,0
+------>bat_tstageqqzhcc
+	fourth_intercode,0,int,,11,0
+	fourth_intercode,0,int,,10,0
+------>bat_tstageqqzhcc
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstagesubject
+	liquidate_date,0,int,,11,0
+	liquidate_date,0,int,,10,0
+------>bat_tstagesubject
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstagesubject
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstagesubject
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstagesubject
+	subject_no,0,int,,11,0
+	subject_no,0,int,,10,0
+------>bat_tstagesubject
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tstageuncomplete
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstageuncomplete
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstageuncomplete
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstageuncomplete
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstageuncomplete
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstageuncomplete
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tstageuncomplete
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tstageuncomplete
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>bat_tstageuncomplete
+	trade_date,0,int,,11,0
+	trade_date,0,int,,10,0
+------>bat_tstageuncomplete
+	complete_date,0,int,,11,0
+	complete_date,0,int,,10,0
+------>bat_tstageuncomplete
+	complete_point,0,int,,11,0
+	complete_point,0,int,,10,0
+------>bat_tstageuncomplete
+	report_serial_no,0,int,,11,0
+	report_serial_no,0,int,,10,0
+------>bat_tstageuncomplete
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstageuncomplete
+	serial_no,0,int,,11,0
+	serial_no,0,int,,10,0
+------>bat_tstageuncomplete
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>bat_tstageuncomplete
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tstageuncomplete_out
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tstageuncomplete_out
+	pendsettle_serial_no,0,int,,11,0
+	pendsettle_serial_no,0,int,,10,0
+------>bat_tstageuncomplete_out
+	execconfirm_no,0,int,,11,0
+	execconfirm_no,0,int,,10,0
+------>bat_tstageuncomplete_out
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>bat_tstageuncomplete_out
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tstageuncomplete_out
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tstageuncomplete_out
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tstageuncomplete_out
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tstageuncomplete_out
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tstageuncomplete_out
+	trade_date,0,int,,11,0
+	trade_date,0,int,,10,0
+------>bat_tstageuncomplete_out
+	deal_date,0,int,,11,0
+	deal_date,0,int,,10,0
+------>bat_tstageuncomplete_out
+	complete_date,0,int,,11,0
+	complete_date,0,int,,10,0
+------>bat_tstageuncomplete_out
+	complete_point,0,int,,11,0
+	complete_point,0,int,,10,0
+------>bat_tstageuncomplete_out
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>bat_tstageuncomplete_out
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tstageuncomplete_out
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tsubjectdata
+	liquidate_date,0,int,,11,0
+	liquidate_date,0,int,,10,0
+------>bat_tsubjectdata
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tsubjectdata
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tsubjectdata
+	subject_no,0,int,,11,0
+	subject_no,0,int,,10,0
+------>bat_tsubjectdata
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tsubjectdata
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tuncomplete
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tuncomplete
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tuncomplete
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tuncomplete
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tuncomplete
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tuncomplete
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tuncomplete
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tuncomplete
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>bat_tuncomplete
+	trade_date,0,int,,11,0
+	trade_date,0,int,,10,0
+------>bat_tuncomplete
+	complete_date,0,int,,11,0
+	complete_date,0,int,,10,0
+------>bat_tuncomplete
+	complete_point,0,int,,11,0
+	complete_point,0,int,,10,0
+------>bat_tuncomplete
+	report_serial_no,0,int,,11,0
+	report_serial_no,0,int,,10,0
+------>bat_tuncomplete
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tuncomplete
+	serial_no,0,int,,11,0
+	serial_no,0,int,,10,0
+------>bat_tuncomplete
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>bat_tuncomplete
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tuncomplete_out
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tuncomplete_out
+	pendsettle_serial_no,0,int,,11,0
+	pendsettle_serial_no,0,int,,10,0
+------>bat_tuncomplete_out
+	execconfirm_no,0,int,,11,0
+	execconfirm_no,0,int,,10,0
+------>bat_tuncomplete_out
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>bat_tuncomplete_out
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tuncomplete_out
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tuncomplete_out
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tuncomplete_out
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tuncomplete_out
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tuncomplete_out
+	trade_date,0,int,,11,0
+	trade_date,0,int,,10,0
+------>bat_tuncomplete_out
+	deal_date,0,int,,11,0
+	deal_date,0,int,,10,0
+------>bat_tuncomplete_out
+	complete_date,0,int,,11,0
+	complete_date,0,int,,10,0
+------>bat_tuncomplete_out
+	complete_point,0,int,,11,0
+	complete_point,0,int,,10,0
+------>bat_tuncomplete_out
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>bat_tuncomplete_out
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tuncomplete_out
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tychgregister
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>bat_tychgregister
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>bat_tychgregister
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>bat_tychgregister
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>bat_tychgregister
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>bat_tychgregister
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>bat_tychgregister
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>bat_tychgregister
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>bat_tychgregister
+	clear_speed,0,int,,11,0
+	clear_speed,0,int,,10,0
+------>bat_tychgregister
+	hg_deal_date,0,int,,11,0
+	hg_deal_date,0,int,,10,0
+------>bat_tychgregister
+	legal_gh_date,0,int,,11,0
+	legal_gh_date,0,int,,10,0
+------>bat_tychgregister
+	actual_gh_date,0,int,,11,0
+	actual_gh_date,0,int,,10,0
+------>bat_tychgregister
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>bat_tychgregister
+	hg_serial_no,0,int,,11,0
+	hg_serial_no,0,int,,10,0
+------>bat_tychgregister
+	market_group_no,0,int,,11,0
+	market_group_no,0,int,,10,0
+------>bat_tychgregister
+	instance_id,0,int,,11,0
+	instance_id,0,int,,10,0
+------>bat_tychgregister
+	trade_date,0,int,,11,0
+	trade_date,0,int,,10,0
+------>fk_tconditionparam
+	rule_id,0,int,,11,0
+	rule_id,0,int,,10,0
+------>fk_tconditionparam
+	risk_param_type,0,int,,11,0
+	risk_param_type,0,int,,10,0
+------>fk_tconditionparam
+	param_int1,0,int,,11,0
+	param_int1,0,int,,10,0
+------>fk_tconditionparam
+	param_int2,0,int,,11,0
+	param_int2,0,int,,10,0
+------>fk_tconditionparam
+	param_int3,0,int,,11,0
+	param_int3,0,int,,10,0
+------>fk_tconditionparam
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_tdimension
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>fk_tdimension
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_tdimension
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_tdimension
+	dimclass_id,0,int,,11,0
+	dimclass_id,0,int,,10,0
+------>fk_tdimension
+	dim_layer_type,0,int,,11,0
+	dim_layer_type,0,int,,10,0
+------>fk_tdimension
+	dim_layer_id,0,int,,11,0
+	dim_layer_id,0,int,,10,0
+------>fk_tdimension
+	parent_id,0,int,,11,0
+	parent_id,0,int,,10,0
+------>fk_tdimension
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>fk_tdimstocks
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>fk_tdimstocks
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_tdimstocks
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_tdimstocks
+	begin_date,0,int,,11,0
+	begin_date,0,int,,10,0
+------>fk_tdimstocks
+	end_date,0,int,,11,0
+	end_date,0,int,,10,0
+------>fk_tdimstocks
+	add_date,0,int,,11,0
+	add_date,0,int,,10,0
+------>fk_tdimstocks
+	add_time,0,int,,11,0
+	add_time,0,int,,10,0
+------>fk_tdimstocks
+	operator_add,0,int,,11,0
+	operator_add,0,int,,10,0
+------>fk_tdimstocks
+	operator_check,0,int,,11,0
+	operator_check,0,int,,10,0
+------>fk_tdynamicdim
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>fk_tdynamicdim
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_tdynamicdim
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_tdynamicdimext
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>fk_tdynamicdimext
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_tdynamicdimext
+	param_define_type,0,int,,11,0
+	param_define_type,0,int,,10,0
+------>fk_tdynamicdimparamext
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>fk_tdynamicdimparamext
+	param_define_type,0,int,,11,0
+	param_define_type,0,int,,10,0
+------>fk_tdynamicdimparamext
+	compare_direction,0,int,,11,0
+	compare_direction,0,int,,10,0
+------>fk_tfinrepurchase
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_tfinrepurchase
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_tfutmarketamountsum
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_tfutmarketamountsum
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_tfutmarketamountsum
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_tfutmarketamountsum
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_tfutmarketamountsum
+	day_count,0,int,,11,0
+	day_count,0,int,,10,0
+------>fk_tfutreportdaysamount
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_tfutreportdaysamount
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_tfutreportdaysamount
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_tfutreportdaysamount
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_thisentrusflow
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_thisentrusflow
+	entrust_serial_no,0,int,,11,0
+	entrust_serial_no,0,int,,10,0
+------>fk_thisentrusflow
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_thisentrusflow
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_thisentrusflow
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_thisentrusflow
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_thisentrusflow
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_thisentrusflow
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_thisentrusflow
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_thisentrusflow
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>fk_thisentrusflow
+	rival_id,0,int,,11,0
+	rival_id,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	entrust_serial_no,0,int,,11,0
+	entrust_serial_no,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>fk_thisentrusflow_pb1sync
+	rival_id,0,int,,11,0
+	rival_id,0,int,,10,0
+------>fk_thisinsflow
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_thisinsflow
+	ins_id,0,int,,11,0
+	ins_id,0,int,,10,0
+------>fk_thisinsflow
+	ins_stock_id,0,int,,11,0
+	ins_stock_id,0,int,,10,0
+------>fk_thisinsflow
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_thisinsflow
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_thisinsflow
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_thisinsflow
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_thisinsflow
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_thisinsflow
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_thisinsflow
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_thisinsflow
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>fk_thisinsflow
+	trade_rival_no,0,int,,11,0
+	trade_rival_no,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	ins_id,0,int,,11,0
+	ins_id,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	ins_stock_id,0,int,,11,0
+	ins_stock_id,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_thisinsflow_pb1sync
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>fk_tmarketamountsum
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_tmarketamountsum
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_tmarketamountsum
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_tmarketamountsum
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_tmarketamountsum
+	day_count,0,int,,11,0
+	day_count,0,int,,10,0
+------>fk_triskfactor
+	rule_id,0,int,,11,0
+	rule_id,0,int,,10,0
+------>fk_triskfactor
+	factor_id,0,int,,11,0
+	factor_id,0,int,,10,0
+------>fk_triskfactor
+	factor_type,0,int,,11,0
+	factor_type,0,int,,10,0
+------>fk_triskfactor
+	factor_mode,0,int,,11,0
+	factor_mode,0,int,,10,0
+------>fk_triskfactor
+	factor_control_type,0,int,,11,0
+	factor_control_type,0,int,,10,0
+------>fk_triskfactor
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_trisklayer
+	rule_id,0,int,,11,0
+	rule_id,0,int,,10,0
+------>fk_trisklayer
+	layer_id,0,int,,11,0
+	layer_id,0,int,,10,0
+------>fk_trisklayer
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_trisklayer
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_trisklayer
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_trisklayer
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_trisklayer
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_triskopenset
+	openset_id,0,int,,11,0
+	openset_id,0,int,,10,0
+------>fk_triskopenset
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_triskopenset
+	control_layer,0,int,,11,0
+	control_layer,0,int,,10,0
+------>fk_triskopenset
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_triskopenset
+	modify_operator,0,int,,11,0
+	modify_operator,0,int,,10,0
+------>fk_triskopenset
+	modify_date,0,int,,11,0
+	modify_date,0,int,,10,0
+------>fk_triskopenset
+	modify_time,0,int,,11,0
+	modify_time,0,int,,10,0
+------>fk_triskopensetvalue
+	openset_id,0,int,,11,0
+	openset_id,0,int,,10,0
+------>fk_triskopensetvalue
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_triskopensetvalue
+	layer_id,0,int,,11,0
+	layer_id,0,int,,10,0
+------>fk_triskopensetvalue
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_triskopensetvalue
+	modify_operator,0,int,,11,0
+	modify_operator,0,int,,10,0
+------>fk_triskopensetvalue
+	modify_date,0,int,,11,0
+	modify_date,0,int,,10,0
+------>fk_triskopensetvalue
+	modify_time,0,int,,11,0
+	modify_time,0,int,,10,0
+------>fk_triskparam
+	rule_id,0,int,,11,0
+	rule_id,0,int,,10,0
+------>fk_triskparam
+	factor_id,0,int,,11,0
+	factor_id,0,int,,10,0
+------>fk_triskparam
+	risk_param_type,0,int,,11,0
+	risk_param_type,0,int,,10,0
+------>fk_triskparam
+	param_int1,0,int,,11,0
+	param_int1,0,int,,10,0
+------>fk_triskparam
+	param_int2,0,int,,11,0
+	param_int2,0,int,,10,0
+------>fk_triskparam
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_triskrelation
+	rule_id1,0,int,,11,0
+	rule_id1,0,int,,10,0
+------>fk_triskrelation
+	rule_id2,0,int,,11,0
+	rule_id2,0,int,,10,0
+------>fk_triskrelation
+	rule_relation_type,0,int,,11,0
+	rule_relation_type,0,int,,10,0
+------>fk_triskrelation
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_triskrelation
+	risk_serial_no1,0,int,,11,0
+	risk_serial_no1,0,int,,10,0
+------>fk_triskrelation
+	risk_serial_no2,0,int,,11,0
+	risk_serial_no2,0,int,,10,0
+------>fk_triskrule
+	rule_id,0,int,,11,0
+	rule_id,0,int,,10,0
+------>fk_triskrule
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_triskrule
+	rule_grade,0,int,,11,0
+	rule_grade,0,int,,10,0
+------>fk_triskrule
+	rule_status,0,int,,11,0
+	rule_status,0,int,,10,0
+------>fk_triskrule
+	control_layer,0,int,,11,0
+	control_layer,0,int,,10,0
+------>fk_triskrule
+	layer_collect,0,int,,11,0
+	layer_collect,0,int,,10,0
+------>fk_triskrule
+	compare_direction,0,int,,11,0
+	compare_direction,0,int,,10,0
+------>fk_triskrule
+	valve1_operation,0,int,,11,0
+	valve1_operation,0,int,,10,0
+------>fk_triskrule
+	valve2_operation,0,int,,11,0
+	valve2_operation,0,int,,10,0
+------>fk_triskrule
+	valve3_operation,0,int,,11,0
+	valve3_operation,0,int,,10,0
+------>fk_triskrule
+	display_unit,0,int,,11,0
+	display_unit,0,int,,10,0
+------>fk_triskrule
+	rule_priority,5,int,,11,0
+	rule_priority,5,int,,10,0
+------>fk_triskrule
+	begin_date,0,int,,11,0
+	begin_date,0,int,,10,0
+------>fk_triskrule
+	expire_date,0,int,,11,0
+	expire_date,0,int,,10,0
+------>fk_triskrule
+	send_message_option,0,int,,11,0
+	send_message_option,0,int,,10,0
+------>fk_triskrule
+	modify_date,0,int,,11,0
+	modify_date,0,int,,10,0
+------>fk_triskrule
+	modify_time,0,int,,11,0
+	modify_time,0,int,,10,0
+------>fk_triskrule
+	modify_operator,0,int,,11,0
+	modify_operator,0,int,,10,0
+------>fk_triskrule
+	create_date,0,int,,11,0
+	create_date,0,int,,10,0
+------>fk_triskrule
+	create_time,0,int,,11,0
+	create_time,0,int,,10,0
+------>fk_triskrule
+	create_operator,0,int,,11,0
+	create_operator,0,int,,10,0
+------>fk_triskrule
+	stock_collect,0,int,,11,0
+	stock_collect,0,int,,10,0
+------>fk_triskrule
+	rule_subtype,0,int,,11,0
+	rule_subtype,0,int,,10,0
+------>fk_triskrule
+	rule_type,0,int,,11,0
+	rule_type,0,int,,10,0
+------>fk_triskrule
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_triskrule
+	compare_direction2,0,int,,11,0
+	compare_direction2,0,int,,10,0
+------>fk_triskrule
+	compare_direction3,0,int,,11,0
+	compare_direction3,0,int,,10,0
+------>fk_triskrulerelate
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_triskrulerelate
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_triskrulerelate
+	risk_batch_no,0,int,,11,0
+	risk_batch_no,0,int,,10,0
+------>fk_triskrulerelate
+	rule_id,0,int,,11,0
+	rule_id,0,int,,10,0
+------>fk_triskrulerelate
+	company_rule_id,0,int,,11,0
+	company_rule_id,0,int,,10,0
+------>fk_tstockpool
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>fk_tstockpool
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_tstockpool
+	stockpool_type,0,int,,11,0
+	stockpool_type,0,int,,10,0
+------>fk_tstockpool
+	dependence_pool,0,int,,11,0
+	dependence_pool,0,int,,10,0
+------>fk_tstockpool
+	logic_relation,0,int,,11,0
+	logic_relation,0,int,,10,0
+------>fk_ttradebalance
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_ttradebalance
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_ttradebalance
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_ttradebalance
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_ttradebalance
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_ttradebalance
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_ttradebalance
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_ttradebalance
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_ttradebalance
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_ttradebalance
+	rival_id,0,int,,11,0
+	rival_id,0,int,,10,0
+------>fk_ttradebalance
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>fk_ttradebalancesum
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_ttradebalancesum
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_ttradebalancesum
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_ttradebalancesum
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_ttradebalancesum
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_ttradebalancesum
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_ttradebalancesum
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_ttradebalancesum
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_ttradebalancesum
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_ttradebalancesum
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_ttradebalancesum
+	rival_id,0,int,,11,0
+	rival_id,0,int,,10,0
+------>fk_ttradebalancesum
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	rival_id,0,int,,11,0
+	rival_id,0,int,,10,0
+------>fk_ttradebalance_pb1sync
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>fk_ttradecount
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_ttradecount
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_ttradecount
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_ttradecount
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_ttradecount
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_ttradecount
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_ttradecount
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_ttradecount
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_ttradecount
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_ttradecount
+	entrust_times,0,int,,11,0
+	entrust_times,0,int,,10,0
+------>fk_ttradecount
+	entrust_withdraw_times,0,int,,11,0
+	entrust_withdraw_times,0,int,,10,0
+------>fk_ttradecountsum
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_ttradecountsum
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_ttradecountsum
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_ttradecountsum
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_ttradecountsum
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_ttradecountsum
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_ttradecountsum
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_ttradecountsum
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_ttradecountsum
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_ttradecountsum
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_ttradecountsum
+	entrust_times,0,int,,11,0
+	entrust_times,0,int,,10,0
+------>fk_ttradecountsum
+	entrust_withdraw_times,0,int,,11,0
+	entrust_withdraw_times,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	entrust_times,0,int,,11,0
+	entrust_times,0,int,,10,0
+------>fk_ttradecount_pb1sync
+	entrust_withdraw_times,0,int,,11,0
+	entrust_withdraw_times,0,int,,10,0
+------>fk_tupdownrange
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_tupdownrange
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_tupdownrange
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_tupdownrange
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>fk_tupdownrangesum
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>fk_tupdownrangesum
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>fk_tupdownrangesum
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>fk_tupdownrangesum
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>fk_tupdownrangesum
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>jy_tadviseapproveconfig
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tadviseapproveconfig
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tadviseapproveconfig
+	advise_type,0,int,,11,0
+	advise_type,0,int,,10,0
+------>jy_tadviseapproveconfig
+	approve_order,0,int,,11,0
+	approve_order,0,int,,10,0
+------>jy_tadviseapproveconfig
+	asset_id,-1,int,,11,0
+	asset_id,-1,int,,10,0
+------>jy_tadviseapproveconfig
+	approve_operator_list,,varchar,512,,
+	approve_operator_list,,varchar,128,,
+------>jy_tassetasset
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tassetasset
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tassetasset
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tassetasset
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tassetday_sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tassetday_sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tassetday_sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tassetday_sync
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tassetday_sync
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>jy_tbankhgregister
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tbankhgregister
+	serial_no,,int,,11,0
+	serial_no,,int,,10,0
+------>jy_tbankhgregister
+	realdeal_serial_no,0,int,,11,0
+	realdeal_serial_no,0,int,,10,0
+------>jy_tbankhgregister
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tbankhgregister
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tbankhgregister
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tbankhgregister
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_tbankhgregister
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tbankhgregister
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_tbankhgregister
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>jy_tbankhgregister
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>jy_tbankhgregister
+	hg_deal_date,0,int,,11,0
+	hg_deal_date,0,int,,10,0
+------>jy_tbankhgregister
+	legal_gh_date,0,int,,11,0
+	legal_gh_date,0,int,,10,0
+------>jy_tbankhgregister
+	actual_gh_date,0,int,,11,0
+	actual_gh_date,0,int,,10,0
+------>jy_tbankhgregister
+	clear_speed,0,int,,11,0
+	clear_speed,0,int,,10,0
+------>jy_tbankhgregister
+	pendsettle_serial_no,0,int,,11,0
+	pendsettle_serial_no,0,int,,10,0
+------>jy_tbankhgregister
+	trade_rival_no,0,int,,11,0
+	trade_rival_no,0,int,,10,0
+------>jy_tbankhgregister
+	ins_id,0,int,,11,0
+	ins_id,0,int,,10,0
+------>jy_tbankmortgage
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tbankmortgage
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tbankmortgage
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tbankmortgage
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tbankmortgage
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_tbankmortgage
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tbankmortgage
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_tbankmortgage
+	realdeal_serial_no,0,int,,11,0
+	realdeal_serial_no,0,int,,10,0
+------>jy_tbankmortgage
+	pendsettle_serial_no,0,int,,11,0
+	pendsettle_serial_no,0,int,,10,0
+------>jy_tbankmortgage
+	mortgage_begin_date,0,int,,11,0
+	mortgage_begin_date,0,int,,10,0
+------>jy_tbankmortgage
+	mortgage_end_date,0,int,,11,0
+	mortgage_end_date,0,int,,10,0
+------>jy_tcashbusiness
+	busin_no,0,int,,11,0
+	busin_no,0,int,,10,0
+------>jy_tcashbusiness
+	batch_no,0,int,,11,0
+	batch_no,0,int,,10,0
+------>jy_tcashbusiness
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tcashbusiness
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tcashbusiness
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tcashbusiness
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tcashbusiness
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>jy_tcashbusiness
+	exchange_direct_type,0,int,,11,0
+	exchange_direct_type,0,int,,10,0
+------>jy_tcashbusiness
+	operate_enable_date,0,int,,11,0
+	operate_enable_date,0,int,,10,0
+------>jy_tcashbusiness
+	enable_point,0,int,,11,0
+	enable_point,0,int,,10,0
+------>jy_tcashbusiness
+	expire_date,0,int,,11,0
+	expire_date,0,int,,10,0
+------>jy_tcashbusiness
+	expire_point,0,int,,11,0
+	expire_point,0,int,,10,0
+------>jy_tcashbusiness
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>jy_tcashbusiness
+	operate_date,0,int,,11,0
+	operate_date,0,int,,10,0
+------>jy_tcashbusiness
+	operate_time,0,int,,11,0
+	operate_time,0,int,,10,0
+------>jy_tcashbusiness
+	target_fund,0,int,,11,0
+	target_fund,0,int,,10,0
+------>jy_tcashbusiness
+	target_asset,0,int,,11,0
+	target_asset,0,int,,10,0
+------>jy_tcashbusiness
+	target_capital_account_id,0,int,,11,0
+	target_capital_account_id,0,int,,10,0
+------>jy_tcashbusiness
+	cash_frozen_range,0,int,,11,0
+	cash_frozen_range,0,int,,10,0
+------>jy_tcashbusiness
+	operate_disable_date,0,int,,11,0
+	operate_disable_date,0,int,,10,0
+------>jy_tcashbusiness
+	frozen_serial_no,0,int,,11,0
+	frozen_serial_no,0,int,,10,0
+------>jy_tfixedrealdeal
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tfixedrealdeal
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tfixedrealdeal
+	realdeal_serial_no,0,int,,11,0
+	realdeal_serial_no,0,int,,10,0
+------>jy_tfixedrealdeal
+	entrust_serial_no,0,int,,11,0
+	entrust_serial_no,0,int,,10,0
+------>jy_tfixedrealdeal
+	batch_serial_no,0,int,,11,0
+	batch_serial_no,0,int,,10,0
+------>jy_tfixedrealdeal
+	report_serial_no,0,int,,11,0
+	report_serial_no,0,int,,10,0
+------>jy_tfixedrealdeal
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tfixedrealdeal
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tfixedrealdeal
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_tfixedrealdeal
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tfixedrealdeal
+	report_code,,varchar,32,,
+	report_code, ,varchar,32,,
+------>jy_tfixedrealdeal
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_tfixedrealdeal
+	stockholder_id,,varchar,20,,
+	stockholder_id, ,varchar,20,,
+------>jy_tfixedrealdeal
+	trade_seat,,varchar,20,,
+	trade_seat, ,varchar,20,,
+------>jy_tfixedrealdeal
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>jy_tfixedrealdeal
+	deal_time,0,int,,11,0
+	deal_time,0,int,,10,0
+------>jy_tfixedrealdeal
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>jy_tfixedrealdeal
+	deal_no,,varchar,64,,
+	deal_no, ,varchar,64,,
+------>jy_tfixedrealdeal
+	trade_platform_id,0,int,,11,0
+	trade_platform_id,0,int,,10,0
+------>jy_tfixedrealdeal
+	capital_account_no,,varchar,128,,
+	capital_account_no, ,varchar,128,,
+------>jy_tfixedrealdeal
+	trade_interface_type,0,int,,11,0
+	trade_interface_type,0,int,,10,0
+------>jy_tfixedrealdeal
+	ins_id,0,int,,11,0
+	ins_id,0,int,,10,0
+------>jy_tfixedrealdeal
+	clear_speed,0,int,,11,0
+	clear_speed,0,int,,10,0
+------>jy_tfixedrealdeal
+	external_ordid,0,int,,11,0
+	external_ordid,0,int,,10,0
+------>jy_tfixedrealdeal
+	legal_gh_date,0,int,,11,0
+	legal_gh_date,0,int,,10,0
+------>jy_tfixedrealdeal
+	first_settle_date,0,int,,11,0
+	first_settle_date,0,int,,10,0
+------>jy_tfixedrealdeal
+	expire_settle_date,0,int,,11,0
+	expire_settle_date,0,int,,10,0
+------>jy_tfixedrealdeal
+	use_days,0,int,,11,0
+	use_days,0,int,,10,0
+------>jy_tfixedrealdeal
+	trade_rival_no,0,int,,11,0
+	trade_rival_no,0,int,,10,0
+------>jy_tfixedrealdeal
+	contact_id,0,int,,11,0
+	contact_id,0,int,,10,0
+------>jy_tfixedrealdeal
+	block_id,0,int,,11,0
+	block_id,0,int,,10,0
+------>jy_tfixedrealdeal
+	msg_send_status,0,int,,11,0
+	msg_send_status,0,int,,10,0
+------>jy_tfixedrealdeal
+	sz_bond_trade_method,0,int,,11,0
+	sz_bond_trade_method,0,int,,10,0
+------>jy_tfixedrealdeal
+	origin_deal_serial_no,0,int,,11,0
+	origin_deal_serial_no,0,int,,10,0
+------>jy_tfixedrealdeal
+	sz_bond_settle_type,0,int,,11,0
+	sz_bond_settle_type,0,int,,10,0
+------>jy_tfixedrealdeal
+	settle_period,0,int,,11,0
+	settle_period,0,int,,10,0
+------>jy_tfixedrealdeal
+	grace_period,0,int,,11,0
+	grace_period,0,int,,10,0
+------>jy_tftrenabledetail_sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tftrenabledetail_sync
+	open_holder_date,0,int,,11,0
+	open_holder_date,0,int,,10,0
+------>jy_tftrenabledetail_sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tftrenabledetail_sync
+	deal_no,,varchar,64,,
+	deal_no, ,varchar,64,,
+------>jy_tftrenabledetail_sync
+	batch_serial_no,0,int,,11,0
+	batch_serial_no,0,int,,10,0
+------>jy_tftrenabledetail_sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tftrenabledetail_sync
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tftrenabledetail_sync
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_tftrenabledetail_sync
+	stockholder_id,,varchar,20,,
+	stockholder_id, ,varchar,20,,
+------>jy_tftrenabledetail_sync
+	report_code,,varchar,32,,
+	report_code, ,varchar,32,,
+------>jy_tftrenabledetail_sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tfundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tfundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tfundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tfundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tfundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_tfundstock
+	asset_type,,varchar,32,,
+	asset_type, ,varchar,32,,
+------>jy_tfutfundstock_sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tfutfundstock_sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tfutfundstock_sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tfutfundstock_sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tfutfundstock_sync
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_tfutunitstock_sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tfutunitstock_sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tfutunitstock_sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tfutunitstock_sync
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tfutunitstock_sync
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_tfutunitstock_sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tfutunitstock_sync
+	bind_seat,,varchar,20,,
+	bind_seat, ,varchar,20,,
+------>jy_tfutunitstock_sync
+	stockholder_id,,varchar,20,,
+	stockholder_id, ,varchar,20,,
+------>jy_tfutunitstock_sync
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_tholdingdetail_sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tholdingdetail_sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tholdingdetail_sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tholdingdetail_sync
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tholdingdetail_sync
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_tholdingdetail_sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tholdingdetail_sync
+	bind_seat,,varchar,20,,
+	bind_seat, ,varchar,20,,
+------>jy_tholdingdetail_sync
+	stockholder_id,,varchar,20,,
+	stockholder_id, ,varchar,20,,
+------>jy_tholdingdetail_sync
+	open_holder_date,0,int,,11,0
+	open_holder_date,0,int,,10,0
+------>jy_tholdingdetail_sync
+	open_time,0,int,,11,0
+	open_time,0,int,,10,0
+------>jy_tholdingdetail_sync
+	deal_no,,varchar,64,,
+	deal_no, ,varchar,64,,
+------>jy_tholdingdetail_sync
+	position_detail_id,0,int,,11,0
+	position_detail_id,0,int,,10,0
+------>jy_tholdingdetail_sync
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_tinsadviseapproveconfig
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tinsadviseapproveconfig
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tinsadviseapproveconfig
+	advise_type,0,int,,11,0
+	advise_type,0,int,,10,0
+------>jy_tinsadviseapproveconfig
+	approve_order,0,int,,11,0
+	approve_order,0,int,,10,0
+------>jy_tinsadviseapproveconfig
+	asset_id,-1,int,,11,0
+	asset_id,-1,int,,10,0
+------>jy_tinsadviseapproveconfig
+	approve_operator_list,,varchar,512,,
+	approve_operator_list,,varchar,128,,
+------>jy_toptionfundstock_sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_toptionfundstock_sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_toptionfundstock_sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_toptionfundstock_sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_toptionfundstock_sync
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_toptionunitstock_sync
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_toptionunitstock_sync
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_toptionunitstock_sync
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_toptionunitstock_sync
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_toptionunitstock_sync
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_toptionunitstock_sync
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_toptionunitstock_sync
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_toutbankfundstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_toutbankfundstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_toutbankfundstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_toutbankfundstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_toutbankfundstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_toutbankfundstock
+	asset_type,,varchar,32,,
+	asset_type, ,varchar,32,,
+------>jy_toutbankpendsettle
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_toutbankpendsettle
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_toutbankpendsettle
+	pendsettle_serial_no,0,int,,11,0
+	pendsettle_serial_no,0,int,,10,0
+------>jy_toutbankpendsettle
+	relate_no,0,int,,11,0
+	relate_no,0,int,,10,0
+------>jy_toutbankpendsettle
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_toutbankpendsettle
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_toutbankpendsettle
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_toutbankpendsettle
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_toutbankpendsettle
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_toutbankpendsettle
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>jy_toutbankpendsettle
+	original_no,0,int,,11,0
+	original_no,0,int,,10,0
+------>jy_toutbankpendsettle
+	asset_change_date,0,int,,11,0
+	asset_change_date,0,int,,10,0
+------>jy_toutbankpendsettle
+	asset_change_point,0,int,,11,0
+	asset_change_point,0,int,,10,0
+------>jy_toutbankpendsettle
+	stock_settle_date,0,int,,11,0
+	stock_settle_date,0,int,,10,0
+------>jy_toutbankpendsettle
+	cash_settle_date,0,int,,11,0
+	cash_settle_date,0,int,,10,0
+------>jy_toutbankpendsettle
+	stock_settle_point,0,int,,11,0
+	stock_settle_point,0,int,,10,0
+------>jy_toutbankpendsettle
+	cash_settle_point,0,int,,11,0
+	cash_settle_point,0,int,,10,0
+------>jy_toutbankpendsettle
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>jy_toutbankpendsettle
+	currency_no,,varchar,3,,
+	currency_no, ,varchar,3,,
+------>jy_toutbankpendsettle
+	clear_speed,0,int,,11,0
+	clear_speed,0,int,,10,0
+------>jy_toutbankpendsettle
+	use_days,0,int,,11,0
+	use_days,0,int,,10,0
+------>jy_toutbankpendsettle
+	trade_platform_id,0,int,,11,0
+	trade_platform_id,0,int,,10,0
+------>jy_toutbankpendsettle
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>jy_toutbankpendsettle
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>jy_toutbankpendsettle
+	trade_date,0,int,,11,0
+	trade_date,0,int,,10,0
+------>jy_toutbankpendsettle
+	trade_rival_no,0,int,,11,0
+	trade_rival_no,0,int,,10,0
+------>jy_toutbankpendsettle
+	ins_id,0,int,,11,0
+	ins_id,0,int,,10,0
+------>jy_toutbankpendsettle
+	ins_batch_serial_no,0,int,,11,0
+	ins_batch_serial_no,0,int,,10,0
+------>jy_toutbankpendsettle
+	ins_display_type,0,int,,11,0
+	ins_display_type,0,int,,10,0
+------>jy_toutbankpendsettle
+	entrust_serial_no,0,int,,11,0
+	entrust_serial_no,0,int,,10,0
+------>jy_toutbankpendsettle
+	actual_gh_date,0,int,,11,0
+	actual_gh_date,0,int,,10,0
+------>jy_toutbankunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_toutbankunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_toutbankunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_toutbankunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_toutbankunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_toutbankunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_toutbankunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_toutbankunitstock
+	asset_type,,varchar,32,,
+	asset_type, ,varchar,32,,
+------>jy_trccombimodel
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_trccombimodel
+	combi_model_param_id,0,int,,11,0
+	combi_model_param_id,0,int,,10,0
+------>jy_trccombimodel
+	combi_model_name,,varchar,128,,
+	combi_model_name, ,varchar,128,,
+------>jy_trccombimodel
+	dim_code,,varchar,32,,
+	dim_code, ,varchar,32,,
+------>jy_trccombimodel
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_trccombimodel
+	report_code,,varchar,32,,
+	report_code, ,varchar,32,,
+------>jy_trccombimodel
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>jy_trccombimodel
+	modify_date,0,int,,11,0
+	modify_date,0,int,,10,0
+------>jy_trccombimodel
+	modify_time,0,int,,11,0
+	modify_time,0,int,,10,0
+------>jy_trccombimodel
+	trade_interface_type,0,int,,11,0
+	trade_interface_type,0,int,,10,0
+------>jy_trccombimodel
+	remark,,varchar,256,,
+	remark, ,varchar,256,,
+------>jy_trccombimodeldetail
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_trccombimodeldetail
+	combi_model_param_id,0,int,,11,0
+	combi_model_param_id,0,int,,10,0
+------>jy_trccombimodeldetail
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_trccombimodeldetail
+	report_code,,varchar,32,,
+	report_code, ,varchar,32,,
+------>jy_trccombimodeldetail
+	info,,varchar,1024,,
+	info, ,varchar,1024,,
+------>jy_tsequence
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tsequence
+	seq_field_name,,varchar,32,,
+	seq_field_name, ,varchar,32,,
+------>jy_tsequence
+	seq_name,,varchar,32,,
+	seq_name, ,varchar,32,,
+------>jy_tsequence
+	seq_current_value,0,int,,11,0
+	seq_current_value,0,int,,10,0
+------>jy_tsequence
+	seq_max_value,0,int,,11,0
+	seq_max_value,0,int,,10,0
+------>jy_tsequence
+	seq_start_value,0,int,,11,0
+	seq_start_value,0,int,,10,0
+------>jy_tsubjectdata
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tsubjectdata
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tsubjectdata
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tsubjectdata
+	subject_no,0,int,,11,0
+	subject_no,0,int,,10,0
+------>jy_tsubjectdata
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tuncomplete
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tuncomplete
+	serial_no,0,int,,11,0
+	serial_no,0,int,,10,0
+------>jy_tuncomplete
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tuncomplete
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tuncomplete
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tuncomplete
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_tuncomplete
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>jy_tuncomplete
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tuncomplete
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>jy_tuncomplete
+	occur_date,0,int,,11,0
+	occur_date,0,int,,10,0
+------>jy_tuncomplete
+	expire_date,0,int,,11,0
+	expire_date,0,int,,10,0
+------>jy_tuncomplete
+	expire_point,0,int,,11,0
+	expire_point,0,int,,10,0
+------>jy_tuncomplete
+	trade_platform_id,0,int,,11,0
+	trade_platform_id,0,int,,10,0
+------>jy_tuncomplete
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>jy_tunitstock
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>jy_tunitstock
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>jy_tunitstock
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>jy_tunitstock
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>jy_tunitstock
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>jy_tunitstock
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>jy_tunitstock
+	bind_seat,,varchar,20,,
+	bind_seat, ,varchar,20,,
+------>jy_tunitstock
+	stockholder_id,,varchar,20,,
+	stockholder_id, ,varchar,20,,
+------>jy_tunitstock
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>jy_tunitstock
+	asset_type,,varchar,32,,
+	asset_type, ,varchar,32,,
+------>pub_pubseq
+	seq_current_value,0,int,,11,0
+	seq_current_value,0,int,,10,0
+------>pub_pubseq
+	seq_max_value,0,int,,11,0
+	seq_max_value,0,int,,10,0
+------>pub_pubseq
+	seq_start_value,0,int,,11,0
+	seq_start_value,0,int,,10,0
+------>pub_tbizfeerelation
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>pub_tbizfeerelation
+	trade_platform_id,0,int,,11,0
+	trade_platform_id,0,int,,10,0
+------>pub_tbizfeerelation
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>pub_tbizfeerelation
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>pub_tbroker
+	broker_id,,int,,11,0
+	broker_id,,int,,10,0
+------>pub_tbroker
+	broker_parent_id,-1,int,,11,0
+	broker_parent_id,-1,int,,10,0
+------>pub_tbrokersysinfo
+	counter_id,,int,,11,0
+	counter_id,,int,,10,0
+------>pub_tbrokersysinfo
+	broker_id,0,int,,11,0
+	broker_id,0,int,,10,0
+------>pub_tbrokersysinfo
+	sh_reserve_scale,0,int,,11,0
+	sh_reserve_scale,0,int,,10,0
+------>pub_tbrokersysinfo
+	sz_reserve_scale,0,int,,11,0
+	sz_reserve_scale,0,int,,10,0
+------>pub_tbrokersysinfo
+	receive_count,0,int,,11,0
+	receive_count,0,int,,10,0
+------>pub_tbrokersysinfo
+	clear_counter_type,-1,int,,11,0
+	clear_counter_type,-1,int,,10,0
+------>pub_tbrokersysinfo
+	append_delay,10,int,,11,0
+	append_delay,10,int,,10,0
+------>pub_tbrokersysinfo
+	gz_reserve_scale,0,int,,11,0
+	gz_reserve_scale,0,int,,10,0
+------>pub_tbrokersysinfo
+	broker_trade_property,,varchar,128,,
+	broker_trade_property, ,varchar,128,,
+------>pub_tbusinflag
+	busin_flag,0,int,,11,0
+	busin_flag,0,int,,10,0
+------>pub_tbusinflag
+	busin_cost,0,int,,11,0
+	busin_cost,0,int,,10,0
+------>pub_tbusinflag
+	busin_o32,0,int,,11,0
+	busin_o32,0,int,,10,0
+------>pub_tbusinflag
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>pub_tbusinflag
+	trade_platform_id,0,int,,11,0
+	trade_platform_id,0,int,,10,0
+------>pub_tbusinflag
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>pub_tbusinflag
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>pub_tbusinflag
+	option_type,0,int,,11,0
+	option_type,0,int,,10,0
+------>pub_tcompany
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>pub_tcompany
+	menu_template,0,int,,11,0
+	menu_template,0,int,,10,0
+------>pub_tcompany
+	pr_id,0,int,,11,0
+	pr_id,0,int,,10,0
+------>pub_tcompany
+	operator_upperlimit,0,int,,11,0
+	operator_upperlimit,0,int,,10,0
+------>pub_tcompany
+	fund_upperlimit,0,int,,11,0
+	fund_upperlimit,0,int,,10,0
+------>pub_tcompany
+	input_date,0,int,,11,0
+	input_date,0,int,,10,0
+------>pub_tcompany
+	org_type,0,int,,11,0
+	org_type,0,int,,10,0
+------>pub_tcompany
+	custom_org_type,0,int,,11,0
+	custom_org_type,0,int,,10,0
+------>pub_tcompany
+	operator_upper,0,int,,11,0
+	operator_upper,0,int,,10,0
+------>pub_tcompanynode
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>pub_tcompanynode
+	node_id,0,int,,11,0
+	node_id,0,int,,10,0
+------>pub_tcomstocktype
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>pub_tcomstocktype
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>pub_tdictionary
+	dic_no,0,int,,11,0
+	dic_no,0,int,,10,0
+------>pub_tdimension
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>pub_tdimension
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>pub_tdimension
+	dimclass_id,0,int,,11,0
+	dimclass_id,0,int,,10,0
+------>pub_tdimension
+	dim_layer_type,0,int,,11,0
+	dim_layer_type,0,int,,10,0
+------>pub_tdimension
+	dim_layer_id,0,int,,11,0
+	dim_layer_id,0,int,,10,0
+------>pub_tdimension
+	parent_id,0,int,,11,0
+	parent_id,0,int,,10,0
+------>pub_tdimension
+	templet_id,0,int,,11,0
+	templet_id,0,int,,10,0
+------>pub_tdimstocks
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>pub_tdimstocks
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>pub_tdimstocks
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>pub_tdimstocks
+	begin_date,0,int,,11,0
+	begin_date,0,int,,10,0
+------>pub_tdimstocks
+	end_date,0,int,,11,0
+	end_date,0,int,,10,0
+------>pub_tdimstocks
+	add_date,0,int,,11,0
+	add_date,0,int,,10,0
+------>pub_tdimstocks
+	add_time,0,int,,11,0
+	add_time,0,int,,10,0
+------>pub_tdimstocks
+	operator_add,0,int,,11,0
+	operator_add,0,int,,10,0
+------>pub_tdimstocks
+	operator_check,0,int,,11,0
+	operator_check,0,int,,10,0
+------>pub_tdynamicdim
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>pub_tdynamicdim
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>pub_tdynamicdimext
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>pub_tdynamicdimext
+	param_define_type,0,int,,11,0
+	param_define_type,0,int,,10,0
+------>pub_tdynamicdimparamext
+	dim_id,0,int,,11,0
+	dim_id,0,int,,10,0
+------>pub_tdynamicdimparamext
+	param_define_type,0,int,,11,0
+	param_define_type,0,int,,10,0
+------>pub_tdynamicdimparamext
+	compare_direction,0,int,,11,0
+	compare_direction,0,int,,10,0
+------>pub_tdynamicdimtempparam
+	templet_id,0,int,,11,0
+	templet_id,0,int,,10,0
+------>pub_tdynamicdimtempparam
+	param_define_type,0,int,,11,0
+	param_define_type,0,int,,10,0
+------>pub_tdynamicdimtempparam
+	row_position,0,int,,11,0
+	row_position,0,int,,10,0
+------>pub_tfactorparam
+	factor_type,0,int,,11,0
+	factor_type,0,int,,10,0
+------>pub_tfactorparam
+	param_define_type,0,int,,11,0
+	param_define_type,0,int,,10,0
+------>pub_tfactorparam
+	risk_param_type,0,int,,11,0
+	risk_param_type,0,int,,10,0
+------>pub_tfactorparam
+	row_position,0,int,,11,0
+	row_position,0,int,,10,0
+------>pub_tfactorparam
+	column_index,0,int,,11,0
+	column_index,0,int,,10,0
+------>pub_tfactorparam
+	important_level,0,int,,11,0
+	important_level,0,int,,10,0
+------>pub_tfeemodeldetailhs
+	fee_model_no,0,int,,11,0
+	fee_model_no,0,int,,10,0
+------>pub_tfeemodeldetailhs
+	fee_id,0,int,,11,0
+	fee_id,0,int,,10,0
+------>pub_tfeemodeldetailhs
+	fee_calc_type,0,int,,11,0
+	fee_calc_type,0,int,,10,0
+------>pub_tfeemodelhs
+	fee_id,0,int,,11,0
+	fee_id,0,int,,10,0
+------>pub_tfeemodelhs
+	fee_model_no,0,int,,11,0
+	fee_model_no,0,int,,10,0
+------>pub_tfeemodelhs
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>pub_tfeemodelhs
+	trade_platform_id,0,int,,11,0
+	trade_platform_id,0,int,,10,0
+------>pub_tfeemodelhs
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>pub_tfeemodelhs
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>pub_tfeemodelhs
+	option_type,0,int,,11,0
+	option_type,0,int,,10,0
+------>pub_tfeemodelhs
+	fee_type,0,int,,11,0
+	fee_type,0,int,,10,0
+------>pub_tfeemodelhs
+	algo_type,-1,int,,11,0
+	algo_type,-1,int,,10,0
+------>pub_tfileentrustfund
+	serial_no,0,int,,11,0
+	serial_no,0,int,,10,0
+------>pub_tfileentrustfund
+	license_no,0,int,,11,0
+	license_no,0,int,,10,0
+------>pub_tfileentrustfund
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>pub_tfileentrustfund
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>pub_tfileentrustfund
+	create_date,0,int,,11,0
+	create_date,0,int,,10,0
+------>pub_tfuturekind
+	future_kind_id,0,int,,11,0
+	future_kind_id,0,int,,10,0
+------>pub_tfuturekind
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>pub_tfuturekind
+	multiple,0,int,,11,0
+	multiple,0,int,,10,0
+------>pub_tfuturekind
+	datecalc_type,0,int,,11,0
+	datecalc_type,0,int,,10,0
+------>pub_tfuturekind
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>pub_tfuturekind
+	future_kind_group,0,int,,11,0
+	future_kind_group,0,int,,10,0
+------>pub_tmarketinfo
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>pub_tmarketinfo
+	stockcode_len_min,0,int,,11,0
+	stockcode_len_min,0,int,,10,0
+------>pub_tmarketinfo
+	stockcode_len_max,0,int,,11,0
+	stockcode_len_max,0,int,,10,0
+------>pub_tmarketinfo
+	time_zone,0,int,,11,0
+	time_zone,0,int,,10,0
+------>pub_tmarketinfo
+	tradeday_type_id,0,int,,11,0
+	tradeday_type_id,0,int,,10,0
+------>pub_tmarketinfo
+	prev_business_date,0,int,,11,0
+	prev_business_date,0,int,,10,0
+------>pub_tmarketinfo
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>pub_tmarketinfo
+	next_business_date,0,int,,11,0
+	next_business_date,0,int,,10,0
+------>pub_tmarketseq
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>pub_tmarketseq
+	seq_current_value,0,int,,11,0
+	seq_current_value,0,int,,10,0
+------>pub_tmarketseq
+	seq_max_value,0,int,,11,0
+	seq_max_value,0,int,,10,0
+------>pub_tmenu
+	menu_id,0,int,,11,0
+	menu_id,0,int,,10,0
+------>pub_tmenu
+	menu_parent_id,0,int,,11,0
+	menu_parent_id,0,int,,10,0
+------>pub_tmenu
+	subsys_no,36,int,,11,0
+	subsys_no,36,int,,10,0
+------>pub_tmenuitemfunc
+	menu_id,0,int,,11,0
+	menu_id,0,int,,10,0
+------>pub_tmenuitemfunc
+	menu_right_id,0,int,,11,0
+	menu_right_id,0,int,,10,0
+------>pub_tmenuitemfunc
+	func_id,0,int,,11,0
+	func_id,0,int,,10,0
+------>pub_triskfactortype
+	factor_type,0,int,,11,0
+	factor_type,0,int,,10,0
+------>pub_triskfactortype
+	factor_mode,0,int,,11,0
+	factor_mode,0,int,,10,0
+------>pub_triskfactortype
+	relative_fid,0,int,,11,0
+	relative_fid,0,int,,10,0
+------>pub_triskfactortype
+	instruction_calc_fid,0,int,,11,0
+	instruction_calc_fid,0,int,,10,0
+------>pub_triskfactortype
+	entrust_calc_fid,0,int,,11,0
+	entrust_calc_fid,0,int,,10,0
+------>pub_triskfactortype
+	static_calc_fid,0,int,,11,0
+	static_calc_fid,0,int,,10,0
+------>pub_triskfactortype
+	smart_hint_option,0,int,,11,0
+	smart_hint_option,0,int,,10,0
+------>pub_triskfactortype
+	coefficient_option,0,int,,11,0
+	coefficient_option,0,int,,10,0
+------>pub_triskruletype
+	rule_type,0,int,,11,0
+	rule_type,0,int,,10,0
+------>pub_triskruletype
+	stock_collect_type,0,int,,11,0
+	stock_collect_type,0,int,,10,0
+------>pub_triskruletype
+	display_unit,0,int,,11,0
+	display_unit,0,int,,10,0
+------>pub_triskruletype
+	account_union_option,0,int,,11,0
+	account_union_option,0,int,,10,0
+------>pub_triskruletype
+	factor_mode,0,int,,11,0
+	factor_mode,0,int,,10,0
+------>pub_triskruletype
+	factor_type,0,int,,11,0
+	factor_type,0,int,,10,0
+------>pub_triskruletype
+	valve_setting_type,0,int,,11,0
+	valve_setting_type,0,int,,10,0
+------>pub_triskruletype
+	smart_hint_option,0,int,,11,0
+	smart_hint_option,0,int,,10,0
+------>pub_triskruletype
+	rule_type_class,0,int,,11,0
+	rule_type_class,0,int,,10,0
+------>pub_trole
+	role_id,0,int,,11,0
+	role_id,0,int,,10,0
+------>pub_tseat
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>pub_tseat
+	broker_id,0,int,,11,0
+	broker_id,0,int,,10,0
+------>pub_tseat
+	branch_id,0,int,,11,0
+	branch_id,0,int,,10,0
+------>pub_tseat
+	logoff_date,0,int,,11,0
+	logoff_date,0,int,,10,0
+------>pub_tsecuritiesbranch
+	branch_id,0,int,,11,0
+	branch_id,0,int,,10,0
+------>pub_tsecuritiesbranch
+	broker_id,0,int,,11,0
+	broker_id,0,int,,10,0
+------>pub_tsecuritiesbranch
+	counter_id,0,int,,11,0
+	counter_id,0,int,,10,0
+------>pub_tsecuritiesbranch
+	port,0,int,,11,0
+	port,0,int,,10,0
+------>pub_tsecuritiesbranch
+	port_reserve,0,int,,11,0
+	port_reserve,0,int,,10,0
+------>pub_tsecuritiesbranch
+	ctp_protocol_type,1,int,,11,0
+	ctp_protocol_type,1,int,,10,0
+------>pub_tstockinfo
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>pub_tstockinfo
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>pub_tstockinfo
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>pub_tstockinfo
+	stock_fullname,,varchar,1024,,
+	stock_fullname,,varchar,128,,
+------>pub_tstockinfo
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>pub_tstockinfo
+	assign_code,0,int,,11,0
+	assign_code,0,int,,10,0
+------>pub_tstockinfo
+	asset_relative_code,0,int,,11,0
+	asset_relative_code,0,int,,10,0
+------>pub_tstockinfo
+	frozen_code,0,int,,11,0
+	frozen_code,0,int,,10,0
+------>pub_tstockinfo
+	match_relative1_code,0,int,,11,0
+	match_relative1_code,0,int,,10,0
+------>pub_tstockinfo
+	issuer_id,0,int,,11,0
+	issuer_id,0,int,,10,0
+------>pub_tstockinfo
+	publish_date,0,int,,11,0
+	publish_date,0,int,,10,0
+------>pub_tstockinfo
+	add_date,0,int,,11,0
+	add_date,0,int,,10,0
+------>pub_tstockinfo
+	listing_date,0,int,,11,0
+	listing_date,0,int,,10,0
+------>pub_tstockinfo
+	wx_listing_date,0,int,,11,0
+	wx_listing_date,0,int,,10,0
+------>pub_tstockinfo
+	limit_trade_busin,0,int,,11,0
+	limit_trade_busin,0,int,,10,0
+------>pub_tstockinfo
+	isin_code,,varchar,32,,
+	isin_code, ,varchar,32,,
+------>pub_tsysparameter
+	sysparam_no,0,int,,11,0
+	sysparam_no,0,int,,10,0
+------>pub_tsysparameter
+	important_level,0,int,,11,0
+	important_level,0,int,,10,0
+------>pub_tsysparameter
+	add_date,0,int,,11,0
+	add_date,0,int,,10,0
+------>pub_ttradedate
+	tradeday_type_id,0,int,,11,0
+	tradeday_type_id,0,int,,10,0
+------>pub_ttradedate
+	sys_date,0,int,,11,0
+	sys_date,0,int,,10,0
+------>pub_ttradedate
+	week_day,0,int,,11,0
+	week_day,0,int,,10,0
+------>pub_ttradeplatform
+	trade_platform_id,0,int,,11,0
+	trade_platform_id,0,int,,10,0
+------>pub_ttradeplatform
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>pub_ttraderival
+	rival_id,0,int,,11,0
+	rival_id,0,int,,10,0
+------>pub_ttraderival
+	org_id,0,int,,11,0
+	org_id,0,int,,10,0
+------>pub_ttraderival
+	interbank_id,0,int,,11,0
+	interbank_id,0,int,,10,0
+------>pub_ttraderival
+	parent_org_interbank_id,0,int,,11,0
+	parent_org_interbank_id,0,int,,10,0
+------>pub_ttraderival
+	org_leaderfollower,0,int,,11,0
+	org_leaderfollower,0,int,,10,0
+------>pub_ttraderivalgroup
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>pub_ttraderivalgroup
+	rival_group_id,0,int,,11,0
+	rival_group_id,0,int,,10,0
+------>pub_ttraderivalgroup
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>pub_ttraderivalgroup
+	add_date,0,int,,11,0
+	add_date,0,int,,10,0
+------>pub_ttraderivalgroupnumber
+	rival_group_id,0,int,,11,0
+	rival_group_id,0,int,,10,0
+------>pub_ttraderivalgroupnumber
+	rival_id,0,int,,11,0
+	rival_id,0,int,,10,0
+------>pub_ttraderivalgroupnumber
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>pub_ttraderivalgroupnumber
+	add_date,0,int,,11,0
+	add_date,0,int,,10,0
+------>yh_fundgroup
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_fundgroup
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_fundgroup
+	fundgroup_id,0,int,,11,0
+	fundgroup_id,0,int,,10,0
+------>yh_fundgroup
+	fundgroup_no,0,int,,11,0
+	fundgroup_no,0,int,,10,0
+------>yh_fundgroup
+	first_combi_id,0,int,,11,0
+	first_combi_id,0,int,,10,0
+------>yh_tadvauthorizset
+	serial_no,0,int,,11,0
+	serial_no,0,int,,10,0
+------>yh_tadvauthorizset
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tadvflowspeedcontrol
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tadvflowspeedcontrol
+	call_num,0,int,,11,0
+	call_num,0,int,,10,0
+------>yh_tappendoperinfo
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tappendoperinfo
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>yh_tappendoperinfo
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_tapprovegroup
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tapprovegroup
+	workgroup_id,0,int,,11,0
+	workgroup_id,0,int,,10,0
+------>yh_tapprovegroup
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tapprovegroup
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>yh_tapprovegroup
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>yh_tarvgroupopt
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tarvgroupopt
+	workgroup_id,0,int,,11,0
+	workgroup_id,0,int,,10,0
+------>yh_tarvgroupopt
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_tarvgroupopt
+	right_no,0,int,,11,0
+	right_no,0,int,,10,0
+------>yh_tarvgroupopt
+	operate_enable_date_min,0,int,,11,0
+	operate_enable_date_min,0,int,,10,0
+------>yh_tarvgroupopt
+	operate_enable_date_max,0,int,,11,0
+	operate_enable_date_max,0,int,,10,0
+------>yh_tasset
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tasset
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>yh_tasset
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tasset
+	default_combi,0,int,,11,0
+	default_combi,0,int,,10,0
+------>yh_tasset
+	combi_upperlimit,100,int,,11,0
+	combi_upperlimit,100,int,,10,0
+------>yh_tassetcaptacct
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tassetcaptacct
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>yh_tassetcaptacct
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>yh_tbondappraise
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tbondappraise
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>yh_tbondappraise
+	appraise_date,0,int,,11,0
+	appraise_date,0,int,,10,0
+------>yh_tbondvaluemodel
+	fa_value_model_id,0,int,,11,0
+	fa_value_model_id,0,int,,10,0
+------>yh_tbondvaluemodel
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tbondvalueset
+	fa_value_model_id,0,int,,11,0
+	fa_value_model_id,0,int,,10,0
+------>yh_tbondvalueset
+	fa_value_model_detail_id,0,int,,11,0
+	fa_value_model_detail_id,0,int,,10,0
+------>yh_tbondvalueset
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tbondvalueset
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>yh_tbondvalueset
+	fa_price_decimal_digits,0,int,,11,0
+	fa_price_decimal_digits,0,int,,10,0
+------>yh_tbondvalueset
+	modify_operator,0,int,,11,0
+	modify_operator,0,int,,10,0
+------>yh_tcapitalaccount
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcapitalaccount
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>yh_tcapitalaccount
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tcapitalaccount
+	broker_id,0,int,,11,0
+	broker_id,0,int,,10,0
+------>yh_tcapitalaccount
+	branch_id,0,int,,11,0
+	branch_id,0,int,,10,0
+------>yh_tcapitalaccount
+	input_date,0,int,,11,0
+	input_date,0,int,,10,0
+------>yh_tcapitalaccount
+	default_asset,0,int,,11,0
+	default_asset,0,int,,10,0
+------>yh_tcapitalaccount
+	oact_synchronous_status,1,int,,11,0
+	oact_synchronous_status,1,int,,10,0
+------>yh_tcapitalaccount
+	refresh_date,0,int,,11,0
+	refresh_date,0,int,,10,0
+------>yh_tcapitalaccount
+	refresh_time,0,int,,11,0
+	refresh_time,0,int,,10,0
+------>yh_tcapitalaccount
+	logoff_date,0,int,,11,0
+	logoff_date,0,int,,10,0
+------>yh_tcapitalacctbiz
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcapitalacctbiz
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>yh_tcapitalacctbiz
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tcombi
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcombi
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>yh_tcombi
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>yh_tcombi
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tcombi
+	create_date,0,int,,11,0
+	create_date,0,int,,10,0
+------>yh_tcombi
+	op_bid_combi_id,0,int,,11,0
+	op_bid_combi_id,0,int,,10,0
+------>yh_tcombi
+	bank_serial_no,0,int,,11,0
+	bank_serial_no,0,int,,10,0
+------>yh_tcombiseat
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcombiseat
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>yh_tcombiseat
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tcombistockholder
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcombistockholder
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>yh_tcombistockholder
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tcompanyparamvalue
+	sysparam_no,0,int,,11,0
+	sysparam_no,0,int,,10,0
+------>yh_tcompanyparamvalue
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcompanyrole
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcompanyrole
+	role_id,0,int,,11,0
+	role_id,0,int,,10,0
+------>yh_tcompanyseq
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcompanyseq
+	seq_current_value,0,int,,11,0
+	seq_current_value,0,int,,10,0
+------>yh_tcompanyseq
+	seq_max_value,0,int,,11,0
+	seq_max_value,0,int,,10,0
+------>yh_tcompanyseq
+	seq_start_value,0,int,,11,0
+	seq_start_value,0,int,,10,0
+------>yh_tcomrolemenu
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcomrolemenu
+	role_id,0,int,,11,0
+	role_id,0,int,,10,0
+------>yh_tcomrolemenu
+	menu_id,0,int,,11,0
+	menu_id,0,int,,10,0
+------>yh_tcomrolemenu
+	menu_right_id,0,int,,11,0
+	menu_right_id,0,int,,10,0
+------>yh_tcomsiteinfo
+	ws_id,0,int,,11,0
+	ws_id,0,int,,10,0
+------>yh_tcomsiteinfo
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tcomsiteinfo
+	oper_last_login_date,0,int,,11,0
+	oper_last_login_date,0,int,,10,0
+------>yh_tcomsiteinfo
+	oper_last_login_time,0,int,,11,0
+	oper_last_login_time,0,int,,10,0
+------>yh_tcomsiteinfo
+	fail_times,0,int,,11,0
+	fail_times,0,int,,10,0
+------>yh_tfeedetailhs
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tfeedetailhs
+	fee_id,0,int,,11,0
+	fee_id,0,int,,10,0
+------>yh_tfeedetailhs
+	fee_calc_type,0,int,,11,0
+	fee_calc_type,0,int,,10,0
+------>yh_tfeedetailyh
+	fee_id,0,int,,11,0
+	fee_id,0,int,,10,0
+------>yh_tfeedetailyh
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tfeedetailyh
+	fee_calc_type,0,int,,11,0
+	fee_calc_type,0,int,,10,0
+------>yh_tfeehs
+	fee_id,0,int,,11,0
+	fee_id,0,int,,10,0
+------>yh_tfeehs
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tfeehs
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tfeehs
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>yh_tfeehs
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tfeehs
+	trade_platform_id,0,int,,11,0
+	trade_platform_id,0,int,,10,0
+------>yh_tfeehs
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>yh_tfeehs
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>yh_tfeehs
+	option_type,0,int,,11,0
+	option_type,0,int,,10,0
+------>yh_tfeehs
+	fee_type,1,int,,11,0
+	fee_type,1,int,,10,0
+------>yh_tfeehs
+	algo_type,-1,int,,11,0
+	algo_type,-1,int,,10,0
+------>yh_tfeeyh
+	fee_id,0,int,,11,0
+	fee_id,0,int,,10,0
+------>yh_tfeeyh
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tfeeyh
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tfeeyh
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>yh_tfeeyh
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tfeeyh
+	trade_platform_id,0,int,,11,0
+	trade_platform_id,0,int,,10,0
+------>yh_tfeeyh
+	stock_type,0,int,,11,0
+	stock_type,0,int,,10,0
+------>yh_tfeeyh
+	entrust_direction,0,int,,11,0
+	entrust_direction,0,int,,10,0
+------>yh_tfeeyh
+	fee_type,1,int,,11,0
+	fee_type,1,int,,10,0
+------>yh_tfeeyh
+	inter_code,0,int,,11,0
+	inter_code,0,int,,10,0
+------>yh_tfixedtradeoperator
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tfixedtradeoperator
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tfixedtradeoperator
+	fixed_busin_flag,0,int,,11,0
+	fixed_busin_flag,0,int,,10,0
+------>yh_tfixedtradeoperator
+	port,0,int,,11,0
+	port,0,int,,10,0
+------>yh_tfixedtradeoperator
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>yh_tfixedtradeoperator
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tfixedtradeoperator
+	branch_id,0,int,,11,0
+	branch_id,0,int,,10,0
+------>yh_tfundgroupconfig
+	fundgroup_id,0,int,,11,0
+	fundgroup_id,0,int,,10,0
+------>yh_tfundgroupconfig
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>yh_tfundinfo
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tfundinfo
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tfundinfo
+	dept_id,0,int,,11,0
+	dept_id,0,int,,10,0
+------>yh_tfundinfo
+	establish_date,0,int,,11,0
+	establish_date,0,int,,10,0
+------>yh_tfundinfo
+	expire_date,0,int,,11,0
+	expire_date,0,int,,10,0
+------>yh_tfundinfo
+	fund_mgr_operator,0,int,,11,0
+	fund_mgr_operator,0,int,,10,0
+------>yh_tfundinfo
+	exrate_set_no,0,int,,11,0
+	exrate_set_no,0,int,,10,0
+------>yh_tfundinfo
+	interbank_id,0,int,,11,0
+	interbank_id,0,int,,10,0
+------>yh_tfundinfo
+	logoff_date,0,int,,11,0
+	logoff_date,0,int,,10,0
+------>yh_tfundinfo
+	logoff_time,0,int,,11,0
+	logoff_time,0,int,,10,0
+------>yh_tfundinfo
+	fa_value_model_id,0,int,,11,0
+	fa_value_model_id,0,int,,10,0
+------>yh_tfundinfo
+	strategy_list,,varchar,4000,,
+	strategy_list,,varchar,1024,,
+------>yh_tfundinfo
+	bank_serial_no,0,int,,11,0
+	bank_serial_no,0,int,,10,0
+------>yh_tfundinfo
+	default_asset,0,int,,11,0
+	default_asset,0,int,,10,0
+------>yh_tfundinfo
+	tadeal_model_id,0,int,,11,0
+	tadeal_model_id,0,int,,10,0
+------>yh_tfundmgrrate
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tfundmgrrate
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tfundmgrrate
+	mgr_fee_type,0,int,,11,0
+	mgr_fee_type,0,int,,10,0
+------>yh_tfundmgrrate
+	asset_id,-1,int,,11,0
+	asset_id,-1,int,,10,0
+------>yh_tfundparamvalue
+	sysparam_no,0,int,,11,0
+	sysparam_no,0,int,,10,0
+------>yh_tfundparamvalue
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tfundparamvalue
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tfuturestockholder
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tfuturestockholder
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tholder_captacct
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tholder_captacct
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>yh_tholder_captacct
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tholder_captacct
+	broker_id,0,int,,11,0
+	broker_id,0,int,,10,0
+------>yh_tholder_captacct
+	branch_id,0,int,,11,0
+	branch_id,0,int,,10,0
+------>yh_tinsflowcrule
+	serial_no,0,int,,11,0
+	serial_no,0,int,,10,0
+------>yh_tinsflowcrule
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tinsflowcrule
+	flow_id,0,int,,11,0
+	flow_id,0,int,,10,0
+------>yh_tinsflowcset
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tinsflowcset
+	flow_id,0,int,,11,0
+	flow_id,0,int,,10,0
+------>yh_tinsflowcstep
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tinsflowcstep
+	flow_id,0,int,,11,0
+	flow_id,0,int,,10,0
+------>yh_tinsflowcstep
+	workgroup_id,0,int,,11,0
+	workgroup_id,0,int,,10,0
+------>yh_tinsflowcstep
+	approve_order,0,int,,11,0
+	approve_order,0,int,,10,0
+------>yh_tinsriskcsteps
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tinsriskcsteps
+	rule_id,0,int,,11,0
+	rule_id,0,int,,10,0
+------>yh_tinsriskcsteps
+	workgroup_id,0,int,,11,0
+	workgroup_id,0,int,,10,0
+------>yh_tinsriskcsteps
+	approve_order,0,int,,11,0
+	approve_order,0,int,,10,0
+------>yh_tinsriskcsteps
+	compare_direction,0,int,,11,0
+	compare_direction,,int,,10,0
+------>yh_tinterbankid
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tinterbankid
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tinterbankid
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tinterbankid
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>yh_tinterbankid
+	interbank_id,0,int,,11,0
+	interbank_id,0,int,,10,0
+------>yh_toperassetright
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_toperassetright
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_toperassetright
+	asset_id,0,int,,11,0
+	asset_id,0,int,,10,0
+------>yh_toperator
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_toperator
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_toperator
+	dept_id,0,int,,11,0
+	dept_id,0,int,,10,0
+------>yh_toperator
+	oper_regist_date,19000101,int,,11,0
+	oper_regist_date,19000101,int,,10,0
+------>yh_toperator
+	oper_regist_time,0,int,,11,0
+	oper_regist_time,0,int,,10,0
+------>yh_toperator
+	logoff_date,0,int,,11,0
+	logoff_date,0,int,,10,0
+------>yh_toperator
+	logoff_time,0,int,,11,0
+	logoff_time,0,int,,10,0
+------>yh_toperator
+	oper_update_pwd_date,0,int,,11,0
+	oper_update_pwd_date,0,int,,10,0
+------>yh_toperator
+	oper_update_pwd_time,0,int,,11,0
+	oper_update_pwd_time,0,int,,10,0
+------>yh_toperator
+	oper_last_login_date,0,int,,11,0
+	oper_last_login_date,0,int,,10,0
+------>yh_toperator
+	oper_last_login_time,0,int,,11,0
+	oper_last_login_time,0,int,,10,0
+------>yh_toperator
+	expire_date,0,int,,11,0
+	expire_date,0,int,,10,0
+------>yh_toperator
+	accounts_manager_code,0,int,,11,0
+	accounts_manager_code,0,int,,10,0
+------>yh_toperator
+	oper_role_type,0,int,,11,0
+	oper_role_type,0,int,,10,0
+------>yh_toperator
+	valid_days,0,int,,11,0
+	valid_days,0,int,,10,0
+------>yh_topercombiright
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_topercombiright
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_topercombiright
+	combi_id,0,int,,11,0
+	combi_id,0,int,,10,0
+------>yh_topercomright
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_topercomright
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_toperfundright
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_toperfundright
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_toperfundright
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_toperrole
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_toperrole
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_toperrole
+	role_id,0,int,,11,0
+	role_id,0,int,,10,0
+------>yh_topersiteinfo
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_topersiteinfo
+	oper_last_login_date,0,int,,11,0
+	oper_last_login_date,0,int,,10,0
+------>yh_topersiteinfo
+	oper_last_login_time,0,int,,11,0
+	oper_last_login_time,0,int,,10,0
+------>yh_topersiteinfo
+	fail_times,0,int,,11,0
+	fail_times,0,int,,10,0
+------>yh_torganappraise
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_torganappraise
+	org_id,0,int,,11,0
+	org_id,0,int,,10,0
+------>yh_torganappraise
+	org_type,0,int,,11,0
+	org_type,0,int,,10,0
+------>yh_torganappraise
+	appraise_date,0,int,,11,0
+	appraise_date,0,int,,10,0
+------>yh_trivalappraise
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_trivalappraise
+	rival_id,0,int,,11,0
+	rival_id,0,int,,10,0
+------>yh_trivalappraise
+	appraise_org_id,0,int,,11,0
+	appraise_org_id,0,int,,10,0
+------>yh_trivalappraise
+	appraise_date,0,int,,11,0
+	appraise_date,0,int,,10,0
+------>yh_trzrqarg
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_trzrqarg
+	capital_account_id,0,int,,11,0
+	capital_account_id,0,int,,10,0
+------>yh_tselffutmarketdetail
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tselffutmarketdetail
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_tselffutmarketdetail
+	selfstock_group_no,0,int,,11,0
+	selfstock_group_no,0,int,,10,0
+------>yh_tselffutmarketdetail
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tselffutmarketdetail
+	firstleg_marketno,0,int,,11,0
+	firstleg_marketno,0,int,,10,0
+------>yh_tselffutmarketdetail
+	secondleg_marketno,0,int,,11,0
+	secondleg_marketno,0,int,,10,0
+------>yh_tselffutmarketgroup
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tselffutmarketgroup
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_tselffutmarketgroup
+	selfstock_group_no,0,int,,11,0
+	selfstock_group_no,0,int,,10,0
+------>yh_tselfstockdetail
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tselfstockdetail
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_tselfstockdetail
+	selfstock_group_no,0,int,,11,0
+	selfstock_group_no,0,int,,10,0
+------>yh_tselfstockdetail
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tselfstockgroup
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tselfstockgroup
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>yh_tselfstockgroup
+	selfstock_group_no,0,int,,11,0
+	selfstock_group_no,0,int,,10,0
+------>yh_tstockholder
+	market_no,0,int,,11,0
+	market_no,0,int,,10,0
+------>yh_tstockholder
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tstockholder
+	stockholder_type,101,int,,11,0
+	stockholder_type,101,int,,10,0
+------>yh_tstockholder
+	op_capital_id,0,int,,11,0
+	op_capital_id,0,int,,10,0
+------>yh_tstockholder
+	open_date,0,int,,11,0
+	open_date,0,int,,10,0
+------>yh_tufxfundright
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>yh_tufxfundright
+	fund_id,0,int,,11,0
+	fund_id,0,int,,10,0
+------>yh_tufxpriviliagectrl
+	serial_no,0,int,,11,0
+	serial_no,0,int,,10,0
+------>yh_tufxpriviliagectrl
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>zl_tautodispense
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>zl_tautodispense
+	auto_dispense_serial_no,0,int,,11,0
+	auto_dispense_serial_no,0,int,,10,0
+------>zl_tautodispense
+	dispense_order_no,0,int,,11,0
+	dispense_order_no,0,int,,10,0
+------>zl_tautodispense
+	avg_task_type,0,int,,11,0
+	avg_task_type,0,int,,10,0
+------>zl_tautodispense
+	operator_no,0,int,,11,0
+	operator_no,0,int,,10,0
+------>zl_tautodispense_external
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>zl_tautodispense_external
+	auto_dispense_serial_no,0,int,,11,0
+	auto_dispense_serial_no,0,int,,10,0
+------>zl_toptradeinfo
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>zl_toptradeinfo
+	trade_operator,0,int,,11,0
+	trade_operator,0,int,,10,0
+------>zl_toptradeinfo
+	ins_count,0,int,,11,0
+	ins_count,0,int,,10,0
+------>zl_toptradeinfo
+	ins_stock_count,0,int,,11,0
+	ins_stock_count,0,int,,10,0
+------>zl_tserialcounter
+	business_date,0,int,,11,0
+	business_date,0,int,,10,0
+------>zl_tserialcounter
+	company_id,0,int,,11,0
+	company_id,0,int,,10,0
+------>zl_tserialcounter
+	sequence_type,0,int,,11,0
+	sequence_type,0,int,,10,0
+------>zl_tserialcounter
+	seq_start_value,0,int,,11,0
+	seq_start_value,0,int,,10,0
+------>zl_tserialcounter
+	seq_current_value,0,int,,11,0
+	seq_current_value,0,int,,10,0
+------>zl_tserialcounter
+	seq_max_value,0,int,,11,0
+	seq_max_value,0,int,,10,0

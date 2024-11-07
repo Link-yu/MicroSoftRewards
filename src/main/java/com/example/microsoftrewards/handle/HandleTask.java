@@ -42,12 +42,12 @@ public class HandleTask {
 
     private static List<String> HOT_KEYS = new ArrayList<>();
 
-    @PostConstruct
-    public void test() throws Exception {
-        log.info("start task");
-        startJob();
-        log.info("end task");
-    }
+//    @PostConstruct
+//    public void test() throws Exception {
+//        log.info("start task");
+////        startJob();8
+//        log.info("end task");
+//    }
     public void startJob() throws Exception {
         HOT_KEYS = SpiderUtil.grabMomoyuHot();
         refreshPoint();
